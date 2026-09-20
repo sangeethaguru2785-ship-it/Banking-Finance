@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Stackly</title>
+    <meta name="description" content="Stackly admin dashboard - manage customers, accounts, transactions and loans.">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/bank-cards.webp" type="image/webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dash-body" data-dash="admin">
+
+    <div class="dash-app">
+
+        <!-- ================== SIDEBAR ================== -->
+        <aside class="dash-sidebar" id="dashSidebar">
+            <div class="dash-sidebar-head">
+                <a href="index.html" class="dash-brand" aria-label="Stackly Home">
+                    <img src="images/logo-red.webp" alt="Stackly">
+                </a>
+                <button type="button" class="dash-sidebar-close" id="dashSidebarClose" aria-label="Close sidebar"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <nav class="dash-nav" aria-label="Admin navigation">
+                <span class="dash-nav-label">Main Menu</span>
+                <a class="dash-nav-link active" data-view="overview"><i class="bi bi-grid-1x2-fill"></i><span>Dashboard Overview</span></a>
+                <a class="dash-nav-link" data-view="customers"><i class="bi bi-people-fill"></i><span>Customer Management</span></a>
+                <a class="dash-nav-link" data-view="accounts"><i class="bi bi-wallet2"></i><span>Account Management</span></a>
+                <a class="dash-nav-link" data-view="transactions"><i class="bi bi-arrow-left-right"></i><span>Transaction Management</span></a>
+                <a class="dash-nav-link" data-view="loans"><i class="bi bi-bank2"></i><span>Loan Management</span></a>
+                <a class="dash-nav-link" data-view="reports"><i class="bi bi-graph-up-arrow"></i><span>Reports &amp; Analytics</span></a>
+                <a class="dash-nav-link" data-view="notifications"><i class="bi bi-bell-fill"></i><span>Notifications</span></a>
+                <a class="dash-nav-link" data-view="settings"><i class="bi bi-gear-fill"></i><span>Settings</span></a>
+            </nav>
+
+            <div class="dash-nav-foot">
+                <a class="dash-nav-link" href="index.html"><i class="bi bi-house-door-fill"></i><span>Go to Home</span></a>
+                <a class="dash-nav-link" id="logoutBtn"><i class="bi bi-box-arrow-right"></i><span>Logout</span></a>
+            </div>
+        </aside>
+        <div class="dash-sidebar-overlay" id="dashSidebarOverlay"></div>
+
+        <!-- ================== MAIN ================== -->
+        <div class="dash-main">
+
+            <!-- Topbar -->
+            <header class="dash-topbar">
+                <div class="dash-topbar-left">
+                    <button type="button" class="dash-sidebar-toggle" id="dashSidebarToggle" aria-label="Open sidebar"><i class="bi bi-list"></i></button>
+                    <h1 class="dash-page-title" id="dashPageTitle">Admin Dashboard</h1>
+                </div>
+                <div class="dash-topbar-right">
+                    <div class="dash-user-chip">
+                        <span class="dash-user-avatar" id="dashUserAvatar">A</span>
+                        <div>
+                            <strong id="dashUserName"></strong>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <main class="dash-content">
+
+                <!-- ========== OVERVIEW ========== -->
+                <section class="dash-view active" id="view-overview">
+                    <div class="dash-welcome">
+                        <h2>Good day, Administrator<span id="overviewSub">Here's what's happening across Stackly today.</span></h2>
+                        <div class="dash-welcome-actions">
+                            <button type="button" class="dash-btn dash-btn-outline" data-view-target="reports"><i class="bi bi-download"></i> Export Report</button>
+                            <button type="button" class="dash-btn dash-btn-red" data-view-target="customers"><i class="bi bi-person-plus"></i> New Customer</button>
+                        </div>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="dash-stats-grid">
+                        <div class="dash-stat-card">
+                            <div class="dash-stat-top">
+                                <span class="dash-stat-icon"><i class="bi bi-people-fill"></i></span>
+                                <span class="dash-stat-trend"><i class="bi bi-arrow-up-right"></i> 12.4%</span>
+                            </div>
+                            <p class="dash-stat-value" data-count="28412">0</p>
+                            <p class="dash-stat-label">Total Customers</p>
+                        </div>
+                        <div class="dash-stat-card">
+                            <div class="dash-stat-top">
+                                <span class="dash-stat-icon"><i class="bi bi-wallet2"></i></span>
+                                <span class="dash-stat-trend"><i class="bi bi-arrow-up-right"></i> 8.1%</span>
+                            </div>
+                            <p class="dash-stat-value" data-count="36175">0</p>
+                            <p class="dash-stat-label">Total Accounts</p>
+                        </div>
+                        <div class="dash-stat-card">
+                            <div class="dash-stat-top">
+                                <span class="dash-stat-icon"><i class="bi bi-arrow-down-circle-fill"></i></span>
+                                <span class="dash-stat-trend"><i class="bi bi-arrow-up-right"></i> 15.7%</span>
+                            </div>
+                            <p class="dash-stat-value" data-count="9480000" data-prefix="$">0</p>
+                            <p class="dash-stat-label">Total Deposits</p>
+                        </div>
+                        <div class="dash-stat-card">
+                            <div class="dash-stat-top">
+                                <span class="dash-stat-icon"><i class="bi bi-arrow-up-circle-fill"></i></span>
+                                <span class="dash-stat-trend down"><i class="bi bi-arrow-down-right"></i> 3.2%</span>
+                            </div>
+                            <p class="dash-stat-value" data-count="6720000" data-prefix="$">0</p>
+                            <p class="dash-stat-label">Total Withdrawals</p>
+                        </div>
+                    </div>
+
+                    <!-- Charts -->
+                    <div class="dash-chart-grid">
+                        <div class="dash-card">
+                            <div class="dash-card-head">
+                                <div>
+                                    <h5 class="dash-card-title"><i class="bi bi-graph-up-arrow"></i>Banking Activity Overview</h5>
+                                    <p class="dash-card-sub">Deposits vs withdrawals over the last 12 months</p>
+                                </div>
+                                <span class="dash-badge success"><i class="bi bi-check-circle"></i> Live</span>
+                            </div>
+                            <div class="dash-chart-wrap">
+                                <canvas id="adminActivityChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="dash-card">
+                            <div class="dash-card-head">
+                                <div>
+                                    <h5 class="dash-card-title"><i class="bi bi-pie-chart-fill"></i>Transaction Split</h5>
+                                    <p class="dash-card-sub">By transaction type</p>
+                                </div>
+                            </div>
+                            <div class="dash-chart-wrap">
+                                <canvas id="adminSplitChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent transactions -->
+                    <div class="dash-card">
+                        <div class="dash-card-head">
+                            <div>
+                                <h5 class="dash-card-title"><i class="bi bi-clock-history"></i>Recent Transactions</h5>
+                                <p class="dash-card-sub">Latest activity across the platform</p>
+                            </div>
+                            <button type="button" class="dash-btn-link-sm" data-view-target="transactions">View all <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                        <div class="dash-table-wrap">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr><th>Customer</th><th>Type</th><th>Reference</th><th>Date</th><th>Status</th><th class="dash-col-money">Amount</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar">SM</span><div><strong>Sarah Mitchell</strong><small>sarah@example.com</small></div></div></td>
+                                        <td><span class="dash-badge info"><i class="bi bi-arrow-down-circle"></i> Deposit</span></td>
+                                        <td>#STK-88421</td><td>Sep 15, 2026</td>
+                                        <td><span class="dash-badge success">Completed</span></td>
+                                        <td class="dash-amount in">+$12,400</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar dark">JL</span><div><strong>James Lee</strong><small>james@example.com</small></div></div></td>
+                                        <td><span class="dash-badge danger"><i class="bi bi-arrow-up-circle"></i> Withdrawal</span></td>
+                                        <td>#STK-88419</td><td>Sep 15, 2026</td>
+                                        <td><span class="dash-badge success">Completed</span></td>
+                                        <td class="dash-amount out">-$4,250</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar">AO</span><div><strong>Amara Okafor</strong><small>amara@example.com</small></div></div></td>
+                                        <td><span class="dash-badge warning"><i class="bi bi-arrow-left-right"></i> Transfer</span></td>
+                                        <td>#STK-88417</td><td>Sep 14, 2026</td>
+                                        <td><span class="dash-badge success">Completed</span></td>
+                                        <td class="dash-amount in">+$2,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar dark">DP</span><div><strong>Daniel Park</strong><small>d.park@example.com</small></div></div></td>
+                                        <td><span class="dash-badge success"><i class="bi bi-cash-stack"></i> Loan Payment</span></td>
+                                        <td>#STK-88412</td><td>Sep 14, 2026</td>
+                                        <td><span class="dash-badge success">Completed</span></td>
+                                        <td class="dash-amount in">+$1,850</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar">EW</span><div><strong>Emily Watson</strong><small>emily@example.com</small></div></div></td>
+                                        <td><span class="dash-badge danger"><i class="bi bi-arrow-up-circle"></i> Withdrawal</span></td>
+                                        <td>#STK-88408</td><td>Sep 13, 2026</td>
+                                        <td><span class="dash-badge warning">Pending</span></td>
+                                        <td class="dash-amount out">-$7,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ========== CUSTOMERS ========== -->
+                <section class="dash-view" id="view-customers">
+                    <div class="dash-card">
+                        <div class="dash-card-head">
+                            <div>
+                                <h5 class="dash-card-title"><i class="bi bi-people-fill"></i>Customer Management</h5>
+                                <p class="dash-card-sub">Search and manage registered customers</p>
+                            </div>
+                            <button type="button" class="dash-btn dash-btn-red" id="addCustomerBtn"><i class="bi bi-person-plus"></i> Add Customer</button>
+                        </div>
+                        <div class="dash-toolbar">
+                            <input type="search" class="dash-input dash-table-search" placeholder="Search customers by name or email...">
+                        </div>
+                        <div class="dash-table-wrap">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr><th>Customer</th><th>Email</th><th>Accounts</th><th>Status</th><th>Joined</th><th>Action</th></tr>
+                                </thead>
+                                <tbody class="dash-table-body">
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar">SM</span><div><strong>Sarah Mitchell</strong><small>#C-1041</small></div></div></td>
+                                        <td>sarah@example.com</td>
+                                        <td>3</td>
+                                        <td><span class="dash-badge success">Active</span></td>
+                                        <td>Jan 2024</td>
+                                        <td><button type="button" class="dash-btn-link-sm">View <i class="bi bi-arrow-right"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar dark">JL</span><div><strong>James Lee</strong><small>#C-1042</small></div></div></td>
+                                        <td>james@example.com</td>
+                                        <td>2</td>
+                                        <td><span class="dash-badge success">Active</span></td>
+                                        <td>Feb 2024</td>
+                                        <td><button type="button" class="dash-btn-link-sm">View <i class="bi bi-arrow-right"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar">AO</span><div><strong>Amara Okafor</strong><small>#C-1043</small></div></div></td>
+                                        <td>amara@example.com</td>
+                                        <td>4</td>
+                                        <td><span class="dash-badge success">Active</span></td>
+                                        <td>Mar 2024</td>
+                                        <td><button type="button" class="dash-btn-link-sm">View <i class="bi bi-arrow-right"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar dark">DP</span><div><strong>Daniel Park</strong><small>#C-1044</small></div></div></td>
+                                        <td>d.park@example.com</td>
+                                        <td>1</td>
+                                        <td><span class="dash-badge warning">Suspended</span></td>
+                                        <td>Apr 2024</td>
+                                        <td><button type="button" class="dash-btn-link-sm">View <i class="bi bi-arrow-right"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar">EW</span><div><strong>Emily Watson</strong><small>#C-1045</small></div></div></td>
+                                        <td>emily@example.com</td>
+                                        <td>2</td>
+                                        <td><span class="dash-badge success">Active</span></td>
+                                        <td>May 2024</td>
+                                        <td><button type="button" class="dash-btn-link-sm">View <i class="bi bi-arrow-right"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar dark">RM</span><div><strong>Rajesh Mehta</strong><small>#C-1046</small></div></div></td>
+                                        <td>rajesh@example.com</td>
+                                        <td>3</td>
+                                        <td><span class="dash-badge danger">Blocked</span></td>
+                                        <td>Jun 2024</td>
+                                        <td><button type="button" class="dash-btn-link-sm">View <i class="bi bi-arrow-right"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ========== ACCOUNTS ========== -->
+                <section class="dash-view" id="view-accounts">
+                    <div class="dash-card">
+                        <div class="dash-card-head">
+                            <div>
+                                <h5 class="dash-card-title"><i class="bi bi-wallet2"></i>Account Management</h5>
+                                <p class="dash-card-sub">All bank accounts across Stackly</p>
+                            </div>
+                            <button type="button" class="dash-btn dash-btn-red" id="addAccountBtn"><i class="bi bi-plus-circle"></i> Open Account</button>
+                        </div>
+                        <div class="dash-toolbar">
+                            <input type="search" class="dash-input dash-table-search" placeholder="Search account number or owner...">
+                        </div>
+                        <div class="dash-table-wrap">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr><th>Account</th><th>Owner</th><th>Type</th><th class="dash-col-money">Balance</th><th>Status</th><th>Action</th></tr>
+                                </thead>
+                                <tbody class="dash-table-body">
+                                    <tr>
+                                        <td><strong>•••• 4271</strong><br><small class="text-muted">STK-SAV-88421</small></td>
+                                        <td>Sarah Mitchell</td>
+                                        <td><span class="dash-badge">Savings</span></td>
+                                        <td class="dash-amount">$64,280</td>
+                                        <td><span class="dash-badge success">Active</span></td>
+                                        <td><button type="button" class="dash-btn-link-sm">Manage</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>•••• 5190</strong><br><small class="text-muted">STK-CHK-66201</small></td>
+                                        <td>James Lee</td>
+                                        <td><span class="dash-badge info">Checking</span></td>
+                                        <td class="dash-amount">$12,450</td>
+                                        <td><span class="dash-badge success">Active</span></td>
+                                        <td><button type="button" class="dash-btn-link-sm">Manage</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>•••• 3347</strong><br><small class="text-muted">STK-INV-22114</small></td>
+                                        <td>Amara Okafor</td>
+                                        <td><span class="dash-badge warning">Investment</span></td>
+                                        <td class="dash-amount">$132,900</td>
+                                        <td><span class="dash-badge success">Active</span></td>
+                                        <td><button type="button" class="dash-btn-link-sm">Manage</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>•••• 8849</strong><br><small class="text-muted">STK-BUS-44309</small></td>
+                                        <td>Daniel Park</td>
+                                        <td><span class="dash-badge">Business</span></td>
+                                        <td class="dash-amount">$8,120</td>
+                                        <td><span class="dash-badge warning">Pending</span></td>
+                                        <td><button type="button" class="dash-btn-link-sm">Manage</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>•••• 7612</strong><br><small class="text-muted">STK-SAV-90157</small></td>
+                                        <td>Emily Watson</td>
+                                        <td><span class="dash-badge">Savings</span></td>
+                                        <td class="dash-amount">$23,650</td>
+                                        <td><span class="dash-badge success">Active</span></td>
+                                        <td><button type="button" class="dash-btn-link-sm">Manage</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>•••• 2055</strong><br><small class="text-muted">STK-CHK-71844</small></td>
+                                        <td>Rajesh Mehta</td>
+                                        <td><span class="dash-badge info">Checking</span></td>
+                                        <td class="dash-amount">-$240</td>
+                                        <td><span class="dash-badge danger">Blocked</span></td>
+                                        <td><button type="button" class="dash-btn-link-sm">Manage</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ========== TRANSACTIONS ========== -->
+                <section class="dash-view" id="view-transactions">
+                    <div class="dash-card">
+                        <div class="dash-card-head">
+                            <div>
+                                <h5 class="dash-card-title"><i class="bi bi-arrow-left-right"></i>Transaction Management</h5>
+                                <p class="dash-card-sub">Monitor and verify all transactions</p>
+                            </div>
+                            <button type="button" class="dash-btn dash-btn-outline" id="pendingBtn"><i class="bi bi-exclamation-circle"></i> Pending (3)</button>
+                        </div>
+                        <div class="dash-toolbar">
+                            <input type="search" class="dash-input dash-table-search" placeholder="Search transactions...">
+                            <select class="dash-select">
+                                <option>All types</option>
+                                <option>Deposits</option>
+                                <option>Withdrawals</option>
+                                <option>Transfers</option>
+                                <option>Loan payments</option>
+                            </select>
+                        </div>
+                        <div class="dash-table-wrap">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr><th>Reference</th><th>Customer</th><th>Type</th><th>Date</th><th>Status</th><th class="dash-col-money">Amount</th></tr>
+                                </thead>
+                                <tbody class="dash-table-body">
+                                    <tr>
+                                        <td><strong>#STK-88421</strong></td>
+                                        <td>Sarah Mitchell</td>
+                                        <td><span class="dash-badge info"><i class="bi bi-arrow-down-circle"></i> Deposit</span></td>
+                                        <td>Sep 15, 2026</td>
+                                        <td><span class="dash-badge success">Completed</span></td>
+                                        <td class="dash-amount in">+$12,400</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>#STK-88419</strong></td>
+                                        <td>James Lee</td>
+                                        <td><span class="dash-badge danger"><i class="bi bi-arrow-up-circle"></i> Withdrawal</span></td>
+                                        <td>Sep 15, 2026</td>
+                                        <td><span class="dash-badge success">Completed</span></td>
+                                        <td class="dash-amount out">-$4,250</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>#STK-88417</strong></td>
+                                        <td>Amara Okafor</td>
+                                        <td><span class="dash-badge warning"><i class="bi bi-arrow-left-right"></i> Transfer</span></td>
+                                        <td>Sep 14, 2026</td>
+                                        <td><span class="dash-badge success">Completed</span></td>
+                                        <td class="dash-amount in">+$2,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>#STK-88412</strong></td>
+                                        <td>Daniel Park</td>
+                                        <td><span class="dash-badge"><i class="bi bi-cash-stack"></i> Loan payment</span></td>
+                                        <td>Sep 14, 2026</td>
+                                        <td><span class="dash-badge success">Completed</span></td>
+                                        <td class="dash-amount in">+$1,850</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>#STK-88408</strong></td>
+                                        <td>Emily Watson</td>
+                                        <td><span class="dash-badge danger"><i class="bi bi-arrow-up-circle"></i> Withdrawal</span></td>
+                                        <td>Sep 13, 2026</td>
+                                        <td><span class="dash-badge warning">Pending</span></td>
+                                        <td class="dash-amount out">-$7,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>#STK-88401</strong></td>
+                                        <td>Rajesh Mehta</td>
+                                        <td><span class="dash-badge warning"><i class="bi bi-arrow-left-right"></i> Transfer</span></td>
+                                        <td>Sep 12, 2026</td>
+                                        <td><span class="dash-badge danger">Flagged</span></td>
+                                        <td class="dash-amount out">-$9,600</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ========== LOANS ========== -->
+                <section class="dash-view" id="view-loans">
+                    <div class="dash-card">
+                        <div class="dash-card-head">
+                            <div>
+                                <h5 class="dash-card-title"><i class="bi bi-bank2"></i>Loan Management</h5>
+                                <p class="dash-card-sub">Approved loans and repayment progress</p>
+                            </div>
+                            <button type="button" class="dash-btn dash-btn-outline" id="newLoanBtn"><i class="bi bi-plus-circle"></i> Approve Loan</button>
+                        </div>
+                        <div class="dash-table-wrap">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr><th>Customer</th><th>Loan Type</th><th class="dash-col-money">Principal</th><th>Payment Progress</th><th>Status</th><th>Action</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar">SM</span><div><strong>Sarah Mitchell</strong><small>LN-2031</small></div></div></td>
+                                        <td><span class="dash-badge info">Home Loan</span></td>
+                                        <td>$240,000</td>
+                                        <td><div class="dash-progress"><span style="width: 42%"></span></div></td>
+                                        <td><span class="dash-badge success">Active</span></td>
+                                        <td><button type="button" class="dash-btn-link-sm">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar dark">JL</span><div><strong>James Lee</strong><small>LN-2032</small></div></div></td>
+                                        <td><span class="dash-badge warning">Auto Loan</span></td>
+                                        <td>$28,500</td>
+                                        <td><div class="dash-progress"><span style="width: 74%"></span></div></td>
+                                        <td><span class="dash-badge success">Active</span></td>
+                                        <td><button type="button" class="dash-btn-link-sm">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar">AO</span><div><strong>Amara Okafor</strong><small>LN-2033</small></div></div></td>
+                                        <td><span class="dash-badge success">Business Loan</span></td>
+                                        <td>$120,000</td>
+                                        <td><div class="dash-progress"><span style="width: 18%"></span></div></td>
+                                        <td><span class="dash-badge warning">Review</span></td>
+                                        <td><button type="button" class="dash-btn-link-sm">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dash-person"><span class="dash-person-avatar">EW</span><div><strong>Emily Watson</strong><small>LN-2028</small></div></div></td>
+                                        <td><span class="dash-badge info">Personal Loan</span></td>
+                                        <td>$15,000</td>
+                                        <td><div class="dash-progress"><span style="width: 100%"></span></div></td>
+                                        <td><span class="dash-badge success">Settled</span></td>
+                                        <td><button type="button" class="dash-btn-link-sm">Details</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ========== REPORTS ========== -->
+                <section class="dash-view" id="view-reports">
+                    <div class="dash-report-cards">
+                        <div class="dash-report-item">
+                            <i class="bi bi-wallet2"></i>
+                            <strong>$9.48M</strong>
+                            <small>Total Deposits (Q3)</small>
+                        </div>
+                        <div class="dash-report-item">
+                            <i class="bi bi-cash-coin"></i>
+                            <strong>$6.72M</strong>
+                            <small>Total Withdrawals (Q3)</small>
+                        </div>
+                        <div class="dash-report-item">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <strong>18.4%</strong>
+                            <small>Revenue Growth</small>
+                        </div>
+                    </div>
+
+                    <div class="dash-chart-grid">
+                        <div class="dash-card">
+                            <div class="dash-card-head">
+                                <div>
+                                    <h5 class="dash-card-title"><i class="bi bi-bar-chart-fill"></i>Monthly Revenue &amp; Expenses</h5>
+                                    <p class="dash-card-sub">Performance across the current year</p>
+                                </div>
+                            </div>
+                            <div class="dash-chart-wrap">
+                                <canvas id="adminReportChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="dash-card">
+                            <div class="dash-card-head">
+                                <div>
+                                    <h5 class="dash-card-title"><i class="bi bi-pie-chart-fill"></i>Revenue Sources</h5>
+                                    <p class="dash-card-sub">By product line</p>
+                                </div>
+                            </div>
+                            <div class="dash-chart-wrap">
+                                <canvas id="adminRevenueSourceChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dash-card">
+                        <div class="dash-card-head">
+                            <div>
+                                <h5 class="dash-card-title"><i class="bi bi-download"></i>Download Reports</h5>
+                                <p class="dash-card-sub">Export data for external analysis</p>
+                            </div>
+                        </div>
+                        <div class="dash-table-wrap">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr><th>Report</th><th>Period</th><th>Size</th><th>Action</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Monthly Transactions Report</td><td>Aug 2026</td><td>2.4 MB</td><td><button type="button" class="dash-btn-link-sm"><i class="bi bi-download"></i> Download</button></td></tr>
+                                    <tr><td>Customer Growth Report</td><td>Q3 2026</td><td>1.1 MB</td><td><button type="button" class="dash-btn-link-sm"><i class="bi bi-download"></i> Download</button></td></tr>
+                                    <tr><td>Loan Portfolio Summary</td><td>Aug 2026</td><td>0.8 MB</td><td><button type="button" class="dash-btn-link-sm"><i class="bi bi-download"></i> Download</button></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ========== NOTIFICATIONS ========== -->
+                <section class="dash-view" id="view-notifications">
+                    <div class="dash-card">
+                        <div class="dash-card-head">
+                            <div>
+                                <h5 class="dash-card-title"><i class="bi bi-bell-fill"></i>Notifications</h5>
+                                <p class="dash-card-sub">System alerts and platform updates</p>
+                            </div>
+                            <button type="button" class="dash-btn-link-sm" id="markReadBtn"><i class="bi bi-check2-all"></i> Mark all read</button>
+                        </div>
+                        <div class="dash-notif-list">
+                            <div class="dash-notif-item unread">
+                                <span class="dash-notif-icon"><i class="bi bi-exclamation-triangle-fill"></i></span>
+                                <div class="dash-notif-body">
+                                    <strong>Unusual withdrawal detected</strong>
+                                    <p>Account STK-CHK-71844 (Rajesh Mehta) flagged for review.</p>
+                                    <small>12 minutes ago</small>
+                                </div>
+                            </div>
+                            <div class="dash-notif-item unread">
+                                <span class="dash-notif-icon"><i class="bi bi-bank"></i></span>
+                                <div class="dash-notif-body">
+                                    <strong>New loan application</strong>
+                                    <p>Amara Okafor submitted a business loan application of $120,000.</p>
+                                    <small>1 hour ago</small>
+                                </div>
+                            </div>
+                            <div class="dash-notif-item">
+                                <span class="dash-notif-icon"><i class="bi bi-person-plus-fill"></i></span>
+                                <div class="dash-notif-body">
+                                    <strong>New customer registered</strong>
+                                    <p>Emily Watson completed onboarding and verification.</p>
+                                    <small>4 hours ago</small>
+                                </div>
+                            </div>
+                            <div class="dash-notif-item">
+                                <span class="dash-notif-icon"><i class="bi bi-graph-up-arrow"></i></span>
+                                <div class="dash-notif-body">
+                                    <strong>Monthly report ready</strong>
+                                    <p>August 2026 performance report is available for download.</p>
+                                    <small>Yesterday</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ========== SETTINGS ========== -->
+                <section class="dash-view" id="view-settings">
+                    <div class="dash-grid-2">
+                        <div class="dash-card">
+                            <div class="dash-card-head">
+                                <div>
+                                    <h5 class="dash-card-title"><i class="bi bi-shield-lock-fill"></i>Security &amp; Access</h5>
+                                    <p class="dash-card-sub">Configure security policies</p>
+                                </div>
+                            </div>
+                            <form id="adminSettingsForm">
+                                <div class="mb-3">
+                                    <label class="dash-form-label">Two-Factor Authentication</label>
+                                    <select class="dash-select">
+                                        <option>Required for all admins</option>
+                                        <option>Required for admins and finance</option>
+                                        <option>Optional</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="dash-form-label">Session Timeout</label>
+                                    <select class="dash-select">
+                                        <option>15 minutes</option>
+                                        <option>30 minutes</option>
+                                        <option selected>60 minutes</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="dash-form-label">Admin Email Alerts</label>
+                                    <input type="email" class="dash-input" value="ops@stackly.com">
+                                </div>
+                                <button type="submit" class="dash-btn dash-btn-red"><i class="bi bi-check-lg"></i> Save Settings</button>
+                            </form>
+                        </div>
+                        <div class="dash-card">
+                            <div class="dash-card-head">
+                                <div>
+                                    <h5 class="dash-card-title"><i class="bi bi-palette-fill"></i>Preferences</h5>
+                                    <p class="dash-card-sub">Customize the admin panel</p>
+                                </div>
+                            </div>
+                            <ul class="dash-check-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Carbon-neutral badge on dashboard</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Auto-refresh reports every 5 minutes</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Send digest email every Monday</li>
+                            </ul>
+                            <button type="button" class="dash-btn dash-btn-dark mt-3"><i class="bi bi-save"></i> Save Preferences</button>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Toast container -->
+    <div class="dash-toast-wrap" id="dashToastWrap"></div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- Dashboard JS -->
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

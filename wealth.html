@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth Management - Stackly</title>
+    <meta name="description" content="Stackly wealth management - personalized strategies, dedicated advisors, and tax-efficient planning.">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/bank-cards.webp" type="image/webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================== SCROLL PROGRESS ================== -->
+    <div id="scroll-progress"></div>
+
+    <!-- ================== NAVBAR ================== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-red.webp" alt="Stackly" class="brand-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavContent" aria-controls="mainNavContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="banking.html">Banking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loans.html">Loans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investments.html">Investments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wealth.html">Wealth Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex flex-lg-row flex-column gap-2 align-items-center">
+                    <a href="login.html" class="btn btn-outline-light btn-sm nav-btn">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================== PAGE HERO ================== -->
+    <section class="page-hero page-hero-bg-bank6">
+        <div class="container">
+            <div class="section-label">
+                <span class="label-line"></span> Wealth Management <span class="label-line"></span>
+            </div>
+            <h1 class="page-hero-title">
+                Tailored Strategies for <span class="text-gradient">Lasting Prosperity</span>
+            </h1>
+            <p class="page-hero-sub">
+                Work with dedicated financial advisors who build personalized roadmaps around your goals — retirement planning, estate management, tax optimization, and beyond.
+            </p>
+            <nav class="page-hero-breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="bi bi-chevron-right"></i>
+                <span>Wealth Management</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ================== WEALTH MANAGEMENT SECTION ================== -->
+    <section id="wealth-management" class="wealth-section section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                    <div class="wealth-visual">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="Wealth management analytics dashboard" class="wealth-img" loading="lazy">
+                        <div class="wealth-card glass-deep">
+                            <div class="wealth-card-icon"><i class="bi bi-pie-chart-fill"></i></div>
+                            <div>
+                                <h6>Your Portfolio</h6>
+                                <span class="wealth-amount">+24.8% YTD</span>
+                            </div>
+                        </div>
+                        <div class="wealth-card-2 glass-deep">
+                            <div class="wealth-card-icon"><i class="bi bi-shield-check"></i></div>
+                            <div>
+                                <h6>Risk Level</h6>
+                                <span class="wealth-level">Conservative</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                    <div class="section-label">
+                        <span class="label-line"></span> Wealth Management
+                    </div>
+                    <h2 class="section-title">
+                        Tailored Strategies for <span class="text-gradient">Lasting Prosperity</span>
+                    </h2>
+                    <p class="section-desc mb-4">
+                        Work with dedicated financial advisors who build personalized roadmaps around your goals — retirement planning, estate management, tax optimization, and beyond.
+                    </p>
+                    <div class="wealth-features">
+                        <div class="wealth-feature">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Dedicated personal financial advisor</span>
+                        </div>
+                        <div class="wealth-feature">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Tax-efficient investment strategies</span>
+                        </div>
+                        <div class="wealth-feature">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Estate &amp; succession planning</span>
+                        </div>
+                        <div class="wealth-feature">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Retirement goal modeling tools</span>
+                        </div>
+                        <div class="wealth-feature">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Quarterly portfolio reviews</span>
+                        </div>
+                    </div>
+                    <a href="404.html" class="btn btn-primary-gradient btn-lg mt-4">Schedule a Consultation <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== RETIREMENT CALCULATOR ================== -->
+    <section id="retirement-calc" class="loan-calc-section section-padding">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="section-label">
+                        <span class="label-line"></span> Retirement Calculator
+                    </div>
+                    <h2 class="section-title">
+                        Plan the Retirement <span class="text-gradient-light">You Deserve</span>
+                    </h2>
+                    <p class="section-desc mb-4">
+                        Project how your current savings and monthly contributions could grow by retirement — and see exactly what it takes to get there.
+                    </p>
+                    <ul class="loan-calc-bullets">
+                        <li><i class="bi bi-check-circle-fill"></i> See your estimated nest egg in seconds</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Model different contributions and timelines</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Get a personalized roadmap from our advisors</li>
+                    </ul>
+                    <a href="404.html" class="btn btn-primary-gradient btn-lg"><i class="bi bi-calendar-heart me-2"></i>Book a Retirement Review</a>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="loan-calc-panel" id="retirementCalculator">
+                        <div class="loan-calc-field">
+                            <label for="retireCurrentAgeRange">Current Age
+                                <output id="retireCurrentAgeOut" for="retireCurrentAgeRange">30 yrs</output>
+                            </label>
+                            <input type="range" class="form-range" id="retireCurrentAgeRange" min="20" max="70" step="1" value="30">
+                        </div>
+                        <div class="loan-calc-field">
+                            <label for="retireTargetAgeRange">Retirement Age
+                                <output id="retireTargetAgeOut" for="retireTargetAgeRange">65 yrs</output>
+                            </label>
+                            <input type="range" class="form-range" id="retireTargetAgeRange" min="45" max="80" step="1" value="65">
+                        </div>
+                        <div class="loan-calc-field">
+                            <label for="retireSavingRange">Current Retirement Savings
+                                <output id="retireSavingOut" for="retireSavingRange">$100,000</output>
+                            </label>
+                            <input type="range" class="form-range" id="retireSavingRange" min="0" max="1000000" step="5000" value="100000">
+                        </div>
+                        <div class="loan-calc-field">
+                            <label for="retireMonthlyRange">Monthly Contribution
+                                <output id="retireMonthlyOut" for="retireMonthlyRange">$1,000/mo</output>
+                            </label>
+                            <input type="range" class="form-range" id="retireMonthlyRange" min="0" max="10000" step="50" value="1000">
+                        </div>
+                        <div class="loan-calc-field">
+                            <label for="retireReturnRange">Expected Annual Return
+                                <output id="retireReturnOut" for="retireReturnRange">7.0%</output>
+                            </label>
+                            <input type="range" class="form-range" id="retireReturnRange" min="1" max="15" step="0.5" value="7">
+                        </div>
+                        <div class="loan-calc-result">
+                            <div class="loan-result-box loan-result-main">
+                                <span>Projected Retirement Savings</span>
+                                <strong id="retireProjectedOut">$1,683,566</strong>
+                            </div>
+                            <div class="loan-result-box">
+                                <span>Total Contributions</span>
+                                <strong id="retireContribOut">$520,000</strong>
+                            </div>
+                            <div class="loan-result-box">
+                                <span>Growth Earned</span>
+                                <strong id="retireEarnedOut">$1,163,566</strong>
+                            </div>
+                        </div>
+                        <p class="loan-calc-note">Projections are hypothetical and assume monthly compounding. They do not account for inflation or taxes and are not a guarantee of future results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== WEALTH SERVICES ================== -->
+    <section id="wealth-services" class="services-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Wealth Services <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    A Full Suite of <span class="text-gradient">Wealth Solutions</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 620px;">
+                    One dedicated team orchestrating every layer of your financial life — investments, taxes, estate, and beyond.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="images/services/wealth-investment.webp" alt="Investment Management" class="service-img" loading="lazy">
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                            <h4>Investment Management</h4>
+                            <p>Discretionary portfolio management with institutional research and disciplined rebalancing.</p>
+                            <a href="404.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="images/services/wealth-planning.webp" alt="Financial Planning" class="service-img" loading="lazy">
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-icon"><i class="bi bi-calculator"></i></div>
+                            <h4>Financial Planning</h4>
+                            <p>Comprehensive plans covering cash flow, goals, insurance, and asset allocation.</p>
+                            <a href="404.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="images/services/wealth-retirement.webp" alt="Retirement Planning" class="service-img" loading="lazy">
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-icon"><i class="bi bi-bank2"></i></div>
+                            <h4>Retirement Planning</h4>
+                            <p>Retirement income modeling, 401(k) rollovers, and pension optimization strategies.</p>
+                            <a href="404.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="images/services/wealth-tax.webp" alt="Tax Optimization" class="service-img" loading="lazy">
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-icon"><i class="bi bi-piggy-bank"></i></div>
+                            <h4>Tax Optimization</h4>
+                            <p>Tax-loss harvesting, asset location, and year-round planning to keep more of what you earn.</p>
+                            <a href="404.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="images/services/wealth-estate.webp" alt="Estate &amp; Legacy" class="service-img" loading="lazy">
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-icon"><i class="bi bi-cast"></i></div>
+                            <h4>Estate &amp; Legacy</h4>
+                            <p>Wills, trusts, and succession planning that protect your family and your life's work.</p>
+                            <a href="404.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="images/services/wealth-philanthropy.webp" alt="Philanthropy" class="service-img" loading="lazy">
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-icon"><i class="bi bi-heart"></i></div>
+                            <h4>Philanthropy</h4>
+                            <p>Donor-advised funds and charitable giving strategies that amplify your impact.</p>
+                            <a href="404.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== ADVISORY PLANS & TIERS ================== -->
+    <section id="advisory-tiers" class="plans-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Advisory Tiers <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Advisory Options for <span class="text-gradient">Every Ambition</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    Scale your advisory relationship as your wealth grows — from everyday guidance to fully dedicated private banking.
+                </p>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="plan-card">
+                        <div class="plan-name">Essential</div>
+                        <div class="plan-price">0.25%<small> AUM / year</small></div>
+                        <p class="plan-desc">Digital-first wealth management with powerful automated tools.</p>
+                        <hr class="plan-divider">
+                        <ul class="plan-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Automated portfolio management</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Goal &amp; retirement planning tools</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Tax-loss harvesting</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Digital access to advisors 24/7</li>
+                        </ul>
+                        <a href="404.html" class="btn btn-outline-dark btn-lg plan-cta">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="plan-card plan-featured">
+                        <span class="plan-popular">Most Popular</span>
+                        <div class="plan-name">Private</div>
+                        <div class="plan-price">0.60%<small> AUM / year</small></div>
+                        <p class="plan-desc">Human + digital advice from a dedicated advisor for serious wealth.</p>
+                        <hr class="plan-divider">
+                        <ul class="plan-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Everything in Essential</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Dedicated financial advisor</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Comprehensive financial planning</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Quarterly portfolio reviews</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Estate &amp; tax coordination</li>
+                        </ul>
+                        <a href="404.html" class="btn btn-primary-gradient btn-lg plan-cta">Talk to an Advisor</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="plan-card">
+                        <div class="plan-name">Elite</div>
+                        <div class="plan-price">Custom<small> AUM / year</small></div>
+                        <p class="plan-desc">Full private banking with a wealth team for complex, multi-generational needs.</p>
+                        <hr class="plan-divider">
+                        <ul class="plan-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Everything in Private</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Dedicated wealth management team</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Market-leading alternatives access</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Multi-generational legacy planning</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Priority lending &amp; private banking</li>
+                        </ul>
+                        <a href="404.html" class="btn btn-outline-dark btn-lg plan-cta">Request an Intro</a>
+                    </div>
+                </div>
+            </div>
+            <p class="plan-note" data-aos="fade-up">Advisory fees are billed quarterly on assets under management. No account minimums to get started with Essential.</p>
+        </div>
+    </section>
+
+    <!-- ================== HOW IT WORKS / STEPS ================== -->
+    <section id="how-it-works" class="steps-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> How It Works <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Your Journey with a <span class="text-gradient">Wealth Advisor</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    A simple, personal process built around listening first — then planning, building, and evolving with you.
+                </p>
+            </div>
+            <div class="row g-4 steps-grid">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="step-card">
+                        <span class="step-number">01</span>
+                        <div class="step-icon"><i class="bi bi-chat-dots"></i></div>
+                        <h4>Meet Your Advisor</h4>
+                        <p>Start with a complimentary consultation to understand your goals, values, and current picture.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="step-card">
+                        <span class="step-number">02</span>
+                        <div class="step-icon"><i class="bi bi-map"></i></div>
+                        <h4>Build Your Roadmap</h4>
+                        <p>Together we design a personalized plan covering investments, tax, estate, and beyond.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-card">
+                        <span class="step-number">03</span>
+                        <div class="step-icon"><i class="bi bi-bar-chart-line"></i></div>
+                        <h4>Review &amp; Evolve</h4>
+                        <p>Track progress with regular reviews and adapt your strategy as life and markets change.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="404.html" class="btn btn-primary-gradient btn-lg">
+                    Schedule a Consultation <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== TRUST & STATISTICS ================== -->
+    <section id="trust-stats" class="trust-stats-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Trust &amp; Statistics <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Trusted with <span class="text-gradient">Serious Wealth</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    The scale, experience, and results that make families and institutions choose Stackly for generations.
+                </p>
+            </div>
+            <div class="trust-stats-grid">
+                <div class="trust-stat-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="trust-stat-icon"><i class="bi bi-globe-americas"></i></div>
+                    <h2 class="counter" data-target="28" data-prefix="$" data-suffix="B+">0</h2>
+                    <span>Client Assets &amp; AUM</span>
+                </div>
+                <div class="trust-stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="trust-stat-icon"><i class="bi bi-people-fill"></i></div>
+                    <h2 class="counter" data-target="120">0</h2>
+                    <span>Senior Wealth Advisors</span>
+                </div>
+                <div class="trust-stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trust-stat-icon"><i class="bi bi-trophy"></i></div>
+                    <h2 class="counter" data-target="40" data-suffix="+">0</h2>
+                    <span>Industry Awards Won</span>
+                </div>
+                <div class="trust-stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="trust-stat-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                    <h2 class="counter" data-target="9.5" data-suffix="%">0</h2>
+                    <span>Avg. Client Retention / Yr</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== SECURITY & TRUST ================== -->
+    <section id="security" class="security-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Security &amp; Trust <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Your Wealth, Guarded at <span class="text-gradient-light">Every Layer</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 620px;">
+                    Institutional safeguards, strict regulation, and fiduciary duty protect everything you entrust to us.
+                </p>
+            </div>
+            <div class="security-grid">
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="security-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                    <h5>256-Bit Encryption</h5>
+                    <p>Military-grade encryption protects every plan, document, and transaction.</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="security-icon"><i class="bi bi-patch-check-fill"></i></div>
+                    <h5>Fiduciary Standard</h5>
+                    <p>Legally bound to always act in your best interest — not ours.</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="security-icon"><i class="bi bi-bank2"></i></div>
+                    <h5>Segregated Custody</h5>
+                    <p>Assets held at regulated custodians, fully separate from our own operations.</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="security-icon"><i class="bi bi-shield-exclamation"></i></div>
+                    <h5>24/7 Fraud Monitoring</h5>
+                    <p>Continuous monitoring and instant alerts keep unauthorized activity at zero risk to you.</p>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-3 trust-badges" data-aos="fade-up">
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> SEC Regulated</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> SIPC Insured</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> SOC 2 Type II</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> Fiduciary &amp; Transparent</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> Two-Factor Auth</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== CTA SECTION ================== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-banner" data-aos="zoom-in">
+                <div class="cta-bg-image"></div>
+                <div class="cta-content text-center">
+                    <h2 class="mb-3">Ready to experience <span class="text-gradient-light">Modern Banking?</span></h2>
+                    <p class="cta-text">Join over 4.5 million smart banking customers. Open your free account in less than 5 minutes.</p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center mt-4">
+                        <a href="404.html" class="btn btn-light btn-lg cta-btn"><i class="bi bi-person-plus-fill me-2"></i>Open an Account</a>
+                        <a href="404.html" class="btn btn-outline-light btn-lg cta-btn"><i class="bi bi-chat-dots me-2"></i>Talk to an Advisor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== NEWSLETTER ================== -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-card">
+                <span class="newsletter-icon"><i class="bi bi-envelope-paper-fill"></i></span>
+                <h3>Stay Ahead with Stackly Insights</h3>
+                <p class="newsletter-desc">Get monthly updates on finance, investing, and exclusive offers — delivered straight to your inbox.</p>
+                <form class="newsletter-form" action="404.html" method="get" novalidate>
+                    <div class="newsletter-input-wrap">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary-gradient">Subscribe</button>
+                    </div>
+                    <p class="newsletter-note"><i class="bi bi-shield-check"></i> No spam. Unsubscribe anytime.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== FOOTER ================== -->
+    <footer class="footer-section">
+        <div class="container">
+            <!-- Main row: Logo + Social | Quick Links | Support | Legal | Contact -->
+            <div class="row g-4 g-lg-5 align-items-start footer-top">
+                <div class="col-md-6 col-xl-3">
+                    <a class="navbar-brand footer-brand" href="index.html">
+                        <img src="images/logo-red.webp" alt="Stackly" class="brand-logo">
+                    </a>
+                    <p class="footer-desc mt-3">
+                        Modern digital banking, investing, and secure financial solutions in one platform.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="404.html" class="social-link" aria-label="Instagram"><img src="images/social/instagram.webp" alt="Instagram"></a>
+                        <a href="404.html" class="social-link" aria-label="Facebook"><img src="images/social/facebook.webp" alt="Facebook"></a>
+                        <a href="404.html" class="social-link" aria-label="LinkedIn"><img src="images/social/linkedin.webp" alt="LinkedIn"></a>
+                        <a href="404.html" class="social-link" aria-label="X"><img src="images/social/x.webp" alt="X"></a>
+                        <a href="404.html" class="social-link" aria-label="YouTube"><img src="images/social/youtube.webp" alt="YouTube"></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="loans.html">Loans</a></li>
+                        <li><a href="investments.html">Investments</a></li>
+                        <li><a href="wealth.html">Wealth Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="404.html">Help Center</a></li>
+                        <li><a href="404.html">Security</a></li>
+                        <li><a href="404.html">FAQs</a></li>
+                        <li><a href="404.html">Live Chat</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="404.html">Privacy Policy</a></li>
+                        <li><a href="404.html">Terms &amp; Conditions</a></li>
+                        <li><a href="404.html">Cookie Policy</a></li>
+                        <li><a href="404.html">Licenses</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 footer-contact">
+                    <h6 class="footer-title">Contact</h6>
+                    <a href="404.html" class="footer-address">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>100 Financial District Ave,<br>New York, NY 10005</span>
+                    </a>
+                    <a href="404.html"><i class="bi bi-telephone-fill"></i> +1 (800) 555-0142</a>
+                    <a href="404.html"><i class="bi bi-envelope-fill"></i> support@stackly.com</a>
+                    <span class="footer-hours"><i class="bi bi-clock-fill"></i> Mon - Sat: 9:00 AM - 7:00 PM</span>
+                    <a href="404.html" class="footer-cta">Get Directions <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright + Legal -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <span>&copy; 2026 Stackly. All Rights Reserved.</span>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-bottom-links justify-content-center justify-content-md-end">
+                            <li><a href="404.html">Privacy Policy</a></li>
+                            <li><a href="404.html">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

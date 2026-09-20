@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Stackly</title>
+    <meta name="description" content="Log in to your Stackly account securely. Choose your role as a customer or admin.">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/bank-cards.webp" type="image/webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================== AUTH SECTION ================== -->
+    <section class="auth-section">
+        <div class="auth-section-bg">
+            <div class="auth-glow auth-glow-a"></div>
+            <div class="auth-glow auth-glow-b"></div>
+        </div>
+        <div class="container auth-container">
+            <div class="row align-items-stretch">
+
+                <!-- ===== LEFT BRAND PANEL ===== -->
+                <div class="col-lg-6 auth-brand-col">
+                    <div class="auth-brand-panel" data-aos="fade-right" data-aos-delay="100">
+                        <a href="index.html" class="auth-brand-logo" aria-label="Stackly Home">
+                            <img src="images/logo-red.webp" alt="Stackly">
+                        </a>
+
+                        <h2 class="auth-brand-headline">Your finances,<br>one secure place.</h2>
+                        <p class="auth-brand-desc">Access your accounts, track investments, and manage your money — all protected by bank-grade security.</p>
+
+                        <ul class="auth-brand-features">
+                            <li>
+                                <span class="auth-brand-feat-icon"><i class="bi bi-shield-lock-fill"></i></span>
+                                <div>
+                                    <strong>256-bit Encryption</strong>
+                                    <small>Your data is always protected</small>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="auth-brand-feat-icon"><i class="bi bi-lightning-charge-fill"></i></span>
+                                <div>
+                                    <strong>Instant Transfers</strong>
+                                    <small>Send & receive money in seconds</small>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="auth-brand-feat-icon"><i class="bi bi-headset"></i></span>
+                                <div>
+                                    <strong>24/7 Support</strong>
+                                    <small>Real humans, always available</small>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="auth-brand-stats">
+                            <div>
+                                <strong>2M+</strong>
+                                <small>Active Users</small>
+                            </div>
+                            <div>
+                                <strong>$48B</strong>
+                                <small>Managed Assets</small>
+                            </div>
+                            <div>
+                                <strong>99.9%</strong>
+                                <small>Uptime</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== RIGHT FORM PANEL ===== -->
+                <div class="col-lg-6 d-flex">
+                    <div class="auth-card" data-aos="fade-up">
+                        <div class="auth-head text-center">
+                            <div class="auth-lock-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                            <h1 class="auth-title">Welcome Back</h1>
+                            <p class="auth-sub">Log in to continue managing your finances securely.</p>
+                        </div>
+
+                        <!-- ROLE SELECTION -->
+                        <div class="auth-role-grid" role="radiogroup" aria-label="Select account type">
+                            <label class="auth-role-card" id="roleCardCustomer">
+                                <input type="radio" name="loginRole" value="customer" checked>
+                                <span class="auth-role-icon"><i class="bi bi-person-fill"></i></span>
+                                <span class="auth-role-text">
+                                    <strong>Customer</strong>
+                                    <small>Personal banking &amp; investments</small>
+                                </span>
+                                <span class="auth-role-check"><i class="bi bi-check-lg"></i></span>
+                            </label>
+                            <label class="auth-role-card" id="roleCardAdmin">
+                                <input type="radio" name="loginRole" value="admin">
+                                <span class="auth-role-icon"><i class="bi bi-shield-lock-fill"></i></span>
+                                <span class="auth-role-text">
+                                    <strong>Admin</strong>
+                                    <small>Bank operations &amp; management</small>
+                                </span>
+                                <span class="auth-role-check"><i class="bi bi-check-lg"></i></span>
+                            </label>
+                        </div>
+
+                        <!-- LOGIN FORM -->
+                        <form id="loginForm" class="auth-form" novalidate>
+                            <div class="auth-field">
+                                <label for="loginEmail" class="form-label">Email Address</label>
+                                <div class="auth-input-group">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <input type="email" class="form-control" id="loginEmail" placeholder="you@example.com" required>
+                                </div>
+                            </div>
+                            <div class="auth-field">
+                                <label for="loginPassword" class="form-label">Password</label>
+                                <div class="auth-input-group">
+                                    <i class="bi bi-lock-fill"></i>
+                                    <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+                                    <button type="button" class="auth-password-toggle" aria-label="Toggle password visibility"><i class="bi bi-eye"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="auth-options d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                                </div>
+                                <a href="404.html" class="auth-link">Forgot password?</a>
+                            </div>
+
+                            <p class="auth-error" id="loginError" hidden></p>
+
+                            <button type="submit" class="btn btn-primary-gradient btn-lg w-100 auth-submit">
+                                Log In <i class="bi bi-box-arrow-in-right ms-2"></i>
+                            </button>
+                        </form>
+
+                        <div class="auth-alt text-center">
+                            <span>Don't have an account?</span>
+                            <a href="signup.html" class="auth-link">Create one now</a>
+                        </div>
+
+                        <div class="auth-divider"><span>or continue with</span></div>
+
+                        <div class="auth-social d-flex gap-3">
+                            <a href="404.html" class="auth-social-btn"><i class="bi bi-google"></i> Google</a>
+                            <a href="404.html" class="auth-social-btn"><i class="bi bi-apple"></i> Apple</a>
+                        </div>
+
+                        <div class="auth-terms text-center">
+                            <i class="bi bi-shield-check"></i> Protected by bank-grade 256-bit encryption
+                        </div>
+
+                        <a href="index.html" class="btn btn-outline-secondary btn-lg w-100 auth-home-btn">
+                            <i class="bi bi-house-door-fill me-2"></i>Go to Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Auth JS -->
+    <script src="js/auth.js"></script>
+</body>
+</html>

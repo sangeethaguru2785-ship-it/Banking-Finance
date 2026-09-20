@@ -1,0 +1,697 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investments - Stackly</title>
+    <meta name="description" content="Stackly investments - stocks, ETFs, crypto, and mutual funds on one powerful platform.">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/bank-cards.webp" type="image/webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================== SCROLL PROGRESS ================== -->
+    <div id="scroll-progress"></div>
+
+    <!-- ================== NAVBAR ================== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-red.webp" alt="Stackly" class="brand-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavContent" aria-controls="mainNavContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="banking.html">Banking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loans.html">Loans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investments.html">Investments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wealth.html">Wealth Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex flex-lg-row flex-column gap-2 align-items-center">
+                    <a href="login.html" class="btn btn-outline-light btn-sm nav-btn">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================== PAGE HERO ================== -->
+    <section class="page-hero page-hero-bg-bank5">
+        <div class="container">
+            <div class="section-label">
+                <span class="label-line"></span> Investments <span class="label-line"></span>
+            </div>
+            <h1 class="page-hero-title">
+                Grow Your Wealth with <span class="text-gradient">Confidence</span>
+            </h1>
+            <p class="page-hero-sub">
+                From first-time investors to seasoned traders — access global markets, curated portfolios, and expert insights all from one powerful platform.
+            </p>
+            <nav class="page-hero-breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="bi bi-chevron-right"></i>
+                <span>Investments</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ================== INVESTMENTS SECTION ================== -->
+    <section id="investments" class="investments-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Investments <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Grow Your Wealth with <span class="text-gradient">Confidence</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 640px;">
+                    From first-time investors to seasoned traders — access global markets, curated portfolios, and expert insights all from one powerful platform.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="investment-card">
+                        <div class="investment-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                        <h4>Stocks &amp; ETFs</h4>
+                        <p>Access 15,000+ stocks and ETFs across global exchanges with zero commission on standard trades.</p>
+                        <div class="investment-metric">
+                            <span>Performance</span>
+                            <strong class="invest-positive">+14.2% avg. return</strong>
+                        </div>
+                        <a href="404.html" class="service-link">Start Investing <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="investment-card">
+                        <div class="investment-icon"><i class="bi bi-coin"></i></div>
+                        <h4>Crypto Assets</h4>
+                        <p>Buy, sell, and hold 50+ cryptocurrencies with institutional-grade custody and insurance.</p>
+                        <div class="investment-metric">
+                            <span>Assets available</span>
+                            <strong>50+ coins</strong>
+                        </div>
+                        <a href="404.html" class="service-link">Explore Crypto <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="investment-card">
+                        <div class="investment-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+                        <h4>Mutual Funds</h4>
+                        <p>Diversified portfolios managed by award-winning fund managers with low expense ratios.</p>
+                        <div class="investment-metric">
+                            <span>Fund options</span>
+                            <strong>200+ funds</strong>
+                        </div>
+                        <a href="404.html" class="service-link">View Funds <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="investment-banner mt-5" data-aos="fade-up">
+                <div class="investment-banner-content">
+                    <div>
+                        <h4>Start investing from just $1</h4>
+                        <p>No minimum balance required. Open your investment account in under 5 minutes.</p>
+                    </div>
+                    <a href="404.html" class="btn btn-primary-gradient btn-lg">Get Started <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== GROWTH CALCULATOR ================== -->
+    <section id="growth-calc" class="loan-calc-section section-padding">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="section-label">
+                        <span class="label-line"></span> Growth Calculator
+                    </div>
+                    <h2 class="section-title">
+                        See How Fast Your Money <span class="text-gradient-light">Can Compound</span>
+                    </h2>
+                    <p class="section-desc mb-4">
+                        Try different starting amounts, monthly contributions, and time horizons to visualize the power of compound growth — instantly.
+                    </p>
+                    <ul class="loan-calc-bullets">
+                        <li><i class="bi bi-check-circle-fill"></i> Free projection with no account required</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Adjust risk and contributions to reach your goals</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Backed by historical market data, not guesses</li>
+                    </ul>
+                    <a href="404.html" class="btn btn-primary-gradient btn-lg"><i class="bi bi-graph-up-arrow me-2"></i>Talk to an Advisor</a>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="loan-calc-panel" id="growthCalculator">
+                        <div class="loan-calc-field">
+                            <label for="growthInitialRange">Initial Investment
+                                <output id="growthInitialOut" for="growthInitialRange">$10,000</output>
+                            </label>
+                            <input type="range" class="form-range" id="growthInitialRange" min="0" max="500000" step="1000" value="10000">
+                        </div>
+                        <div class="loan-calc-field">
+                            <label for="growthMonthlyRange">Monthly Contribution
+                                <output id="growthMonthlyOut" for="growthMonthlyRange">$500/mo</output>
+                            </label>
+                            <input type="range" class="form-range" id="growthMonthlyRange" min="0" max="10000" step="50" value="500">
+                        </div>
+                        <div class="loan-calc-field">
+                            <label for="growthReturnRange">Expected Annual Return
+                                <output id="growthReturnOut" for="growthReturnRange">8.0%</output>
+                            </label>
+                            <input type="range" class="form-range" id="growthReturnRange" min="1" max="15" step="0.5" value="8">
+                        </div>
+                        <div class="loan-calc-field">
+                            <label for="growthYearsRange">Time Horizon
+                                <output id="growthYearsOut" for="growthYearsRange">20 yrs</output>
+                            </label>
+                            <input type="range" class="form-range" id="growthYearsRange" min="1" max="40" step="1" value="20">
+                        </div>
+                        <div class="loan-calc-result">
+                            <div class="loan-result-box loan-result-main">
+                                <span>Projected Future Value</span>
+                                <strong id="growthFVOut">$332,103</strong>
+                            </div>
+                            <div class="loan-result-box">
+                                <span>Total Contributions</span>
+                                <strong id="growthContribOut">$130,000</strong>
+                            </div>
+                            <div class="loan-result-box">
+                                <span>Growth Earned</span>
+                                <strong id="growthEarnedOut">$202,103</strong>
+                            </div>
+                        </div>
+                        <p class="loan-calc-note">Projections are hypothetical, assume monthly compounding, and do not guarantee future results. Investing involves risk, including possible loss of principal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== PORTFOLIO STRATEGIES ================== -->
+    <section id="strategies" class="plans-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Portfolio Strategies <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    A Strategy for <span class="text-gradient">Every Investor</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    Professionally managed portfolios engineered for your goals, risk tolerance, and timeline — from cautious to aggressive.
+                </p>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="plan-card">
+                        <div class="plan-name">Conservative</div>
+                        <div class="plan-price">25%<small> Equities</small></div>
+                        <p class="plan-desc">Capital preservation first — ideal for short horizons and low tolerance for volatility.</p>
+                        <hr class="plan-divider">
+                        <ul class="plan-features">
+                            <li><i class="bi bi-check-circle-fill"></i> 75% bonds &amp; cash equivalents</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Historical avg. return 4-5%</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Monthly rebalancing</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Low volatility &amp; downside protection</li>
+                        </ul>
+                        <a href="404.html" class="btn btn-outline-dark btn-lg plan-cta">Explore Conservative</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="plan-card plan-featured">
+                        <span class="plan-popular">Most Popular</span>
+                        <div class="plan-name">Balanced</div>
+                        <div class="plan-price">60%<small> Equities</small></div>
+                        <p class="plan-desc">Steady growth with managed risk — the sweet spot for most long-term investors.</p>
+                        <hr class="plan-divider">
+                        <ul class="plan-features">
+                            <li><i class="bi bi-check-circle-fill"></i> 60% equities / 40% fixed income</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Historical avg. return 7-8%</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Global diversification</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Tax-loss harvesting included</li>
+                        </ul>
+                        <a href="404.html" class="btn btn-primary-gradient btn-lg plan-cta">Explore Balanced</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="plan-card">
+                        <div class="plan-name">Growth</div>
+                        <div class="plan-price">90%<small> Equities</small></div>
+                        <p class="plan-desc">Maximum long-term upside for investors comfortable with higher volatility.</p>
+                        <hr class="plan-divider">
+                        <ul class="plan-features">
+                            <li><i class="bi bi-check-circle-fill"></i> High-conviction global equities</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Historical avg. return 9-10%</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Emerging markets exposure</li>
+                            <li><i class="bi bi-check-circle-fill"></i> AI-assisted rebalancing</li>
+                        </ul>
+                        <a href="404.html" class="btn btn-outline-dark btn-lg plan-cta">Explore Growth</a>
+                    </div>
+                </div>
+            </div>
+            <p class="plan-note" data-aos="fade-up">Historical returns are not a guarantee of future performance. Risk-based strategies are matched to your profile.</p>
+        </div>
+    </section>
+
+    <!-- ================== TRUST & STATISTICS ================== -->
+    <section id="trust-stats" class="trust-stats-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Trust &amp; Statistics <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Our Track Record, <span class="text-gradient">Backed by Numbers</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    Assets under management, investors served, and market access — the numbers behind every portfolio on Stackly.
+                </p>
+            </div>
+            <div class="trust-stats-grid">
+                <div class="trust-stat-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="trust-stat-icon"><i class="bi bi-cash-stack"></i></div>
+                    <h2 class="counter" data-target="12" data-prefix="$" data-suffix="B+">0</h2>
+                    <span>Assets Under Management</span>
+                </div>
+                <div class="trust-stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="trust-stat-icon"><i class="bi bi-people-fill"></i></div>
+                    <h2 class="counter" data-target="850" data-suffix="K+">0</h2>
+                    <span>Active Investors</span>
+                </div>
+                <div class="trust-stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trust-stat-icon"><i class="bi bi-bar-chart-fill"></i></div>
+                    <h2 class="counter" data-target="15000" data-suffix="+">0</h2>
+                    <span>Stocks &amp; ETFs Accessible</span>
+                </div>
+                <div class="trust-stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="trust-stat-icon"><i class="bi bi-award"></i></div>
+                    <h2>300+</h2>
+                    <span>Funds &amp; Award-Winning Managers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== HOW IT WORKS / STEPS ================== -->
+    <section id="how-it-works" class="steps-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> How It Works <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Invest in <span class="text-gradient">Three Simple Steps</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    From goal-setting to a fully managed portfolio — investing with Stackly takes minutes, not months.
+                </p>
+            </div>
+            <div class="row g-4 steps-grid">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="step-card">
+                        <span class="step-number">01</span>
+                        <div class="step-icon"><i class="bi bi-ui-checks"></i></div>
+                        <h4>Answer a Few Questions</h4>
+                        <p>Tell us your goals, timeline, and risk comfort with a short, smart questionnaire.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="step-card">
+                        <span class="step-number">02</span>
+                        <div class="step-icon"><i class="bi bi-sliders"></i></div>
+                        <h4>Get Your Portfolio</h4>
+                        <p>We build and auto-balance a diversified portfolio matched to your unique profile.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-card">
+                        <span class="step-number">03</span>
+                        <div class="step-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                        <h4>Fund &amp; Watch It Grow</h4>
+                        <p>Add funds anytime, set reminders, and track performance with beautiful real-time dashboards.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="404.html" class="btn btn-primary-gradient btn-lg">
+                    Start Investing <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== TESTIMONIALS ================== -->
+    <section id="testimonials" class="testimonials-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Testimonials <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Investor Stories, <span class="text-gradient">Real Results</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    From first-time investors to seasoned traders — hear how Stackly helped them grow their wealth.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "I was terrified of investing until Stackly. The guided portfolio matched my risk perfectly, and my balance has grown 18% in the first year alone."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/p2.webp" alt="Sarah Johnson">
+                            <div>
+                                <h6>Sarah Johnson</h6>
+                                <span>Product Designer, San Francisco</span>
+                            </div>
+                            <i class="bi bi-patch-check-fill verified"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The tax-loss harvesting alone paid for my subscription. The dashboards are stunning and the advisors genuinely know their stuff."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/p10.webp" alt="Maria Rodriguez">
+                            <div>
+                                <h6>Maria Rodriguez</h6>
+                                <span>CEO, Brightline Logistics</span>
+                            </div>
+                            <i class="bi bi-patch-check-fill verified"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "I traded scattered accounts for years. Stackly consolidated everything on one platform and my execution speed has never been better."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/p5.webp" alt="James Chen">
+                            <div>
+                                <h6>James Chen</h6>
+                                <span>Software Engineer, Toronto</span>
+                            </div>
+                            <i class="bi bi-patch-check-fill verified"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== FAQ SECTION ================== -->
+    <section id="faq" class="faq-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> FAQs <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Investing Questions, <span class="text-gradient">Answered</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    The essentials of investing with Stackly — clearly explained.
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9" data-aos="fade-up">
+                    <div class="accordion faq-accordion" id="investFAQ">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#invFaqOne" aria-expanded="true" aria-controls="invFaqOne">
+                                    How much money do I need to start investing?
+                                </button>
+                            </h3>
+                            <div id="invFaqOne" class="accordion-collapse collapse show" data-bs-parent="#investFAQ">
+                                <div class="accordion-body">
+                                    You can start with as little as $1. There's no minimum balance and no account maintenance fees, so anyone can begin building wealth.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#invFaqTwo" aria-expanded="false" aria-controls="invFaqTwo">
+                                    Is my money protected if the market drops?
+                                </button>
+                            </h3>
+                            <div id="invFaqTwo" class="accordion-collapse collapse" data-bs-parent="#investFAQ">
+                                <div class="accordion-body">
+                                    Investments carry market risk and can decline in value. However, your cash and assets are held at regulated institutions, fully segregated from our operations and covered by SIPC up to $500,000.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#invFaqThree" aria-expanded="false" aria-controls="invFaqThree">
+                                    Can I withdraw my money anytime?
+                                </button>
+                            </h3>
+                            <div id="invFaqThree" class="accordion-collapse collapse" data-bs-parent="#investFAQ">
+                                <div class="accordion-body">
+                                    Yes. Withdrawals are instant for available cash and settle in 1-2 business days for securities sales. There are no exit fees or lock-up periods on standard portfolios.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#invFaqFour" aria-expanded="false" aria-controls="invFaqFour">
+                                    How are my returns taxed?
+                                </button>
+                            </h3>
+                            <div id="invFaqFour" class="accordion-collapse collapse" data-bs-parent="#investFAQ">
+                                <div class="accordion-body">
+                                    Tax treatment depends on your account type and jurisdiction. We offer tax-efficient strategies, automatic tax-loss harvesting, and year-round tax reports to help you keep more of what you earn.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#invFaqFive" aria-expanded="false" aria-controls="invFaqFive">
+                                    Is investing automated or do I make my own trades?
+                                </button>
+                            </h3>
+                            <div id="invFaqFive" class="accordion-collapse collapse" data-bs-parent="#investFAQ">
+                                <div class="accordion-body">
+                                    Both. Managed portfolios are fully automated and rebalanced for you, while our active trading platform lets you buy stocks, ETFs, and crypto manually — all from the same account.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== SECURITY & TRUST ================== -->
+    <section id="security" class="security-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Security &amp; Trust <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Protected at <span class="text-gradient-light">Every Layer</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 620px;">
+                    Multi-layered security and regulation keep your investments safe, insured, and precisely where they belong.
+                </p>
+            </div>
+            <div class="security-grid">
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="security-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                    <h5>256-Bit Encryption</h5>
+                    <p>Every trade, document, and login is protected by bank-grade encryption.</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="security-icon"><i class="bi bi-fingerprint"></i></div>
+                    <h5>Biometric Login</h5>
+                    <p>Face ID and fingerprint security keep your portfolio in your control.</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="security-icon"><i class="bi bi-ui-checks"></i></div>
+                    <h5>Institutional-Grade Custody</h5>
+                    <p>Assets are held in segregated accounts with leading regulated custodians.</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="security-icon"><i class="bi bi-patch-check-fill"></i></div>
+                    <h5>Regulated &amp; Insured</h5>
+                    <p>SEC-regulated and SIPC-insured up to $500,000 on eligible accounts.</p>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-3 trust-badges" data-aos="fade-up">
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> SEC Regulated</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> SIPC Insured</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> SOC 2 Type II</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> Two-Factor Auth</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> Segregated Custody</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== CTA SECTION ================== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-banner" data-aos="zoom-in">
+                <div class="cta-bg-image"></div>
+                <div class="cta-content text-center">
+                    <h2 class="mb-3">Ready to experience <span class="text-gradient-light">Modern Banking?</span></h2>
+                    <p class="cta-text">Join over 4.5 million smart banking customers. Open your free account in less than 5 minutes.</p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center mt-4">
+                        <a href="404.html" class="btn btn-light btn-lg cta-btn"><i class="bi bi-person-plus-fill me-2"></i>Open an Account</a>
+                        <a href="404.html" class="btn btn-outline-light btn-lg cta-btn"><i class="bi bi-chat-dots me-2"></i>Talk to an Advisor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== NEWSLETTER ================== -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-card">
+                <span class="newsletter-icon"><i class="bi bi-envelope-paper-fill"></i></span>
+                <h3>Stay Ahead with Stackly Insights</h3>
+                <p class="newsletter-desc">Get monthly updates on finance, investing, and exclusive offers — delivered straight to your inbox.</p>
+                <form class="newsletter-form" action="404.html" method="get" novalidate>
+                    <div class="newsletter-input-wrap">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary-gradient">Subscribe</button>
+                    </div>
+                    <p class="newsletter-note"><i class="bi bi-shield-check"></i> No spam. Unsubscribe anytime.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== FOOTER ================== -->
+    <footer class="footer-section">
+        <div class="container">
+            <!-- Main row: Logo + Social | Quick Links | Support | Legal | Contact -->
+            <div class="row g-4 g-lg-5 align-items-start footer-top">
+                <div class="col-md-6 col-xl-3">
+                    <a class="navbar-brand footer-brand" href="index.html">
+                        <img src="images/logo-red.webp" alt="Stackly" class="brand-logo">
+                    </a>
+                    <p class="footer-desc mt-3">
+                        Modern digital banking, investing, and secure financial solutions in one platform.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="404.html" class="social-link" aria-label="Instagram"><img src="images/social/instagram.webp" alt="Instagram"></a>
+                        <a href="404.html" class="social-link" aria-label="Facebook"><img src="images/social/facebook.webp" alt="Facebook"></a>
+                        <a href="404.html" class="social-link" aria-label="LinkedIn"><img src="images/social/linkedin.webp" alt="LinkedIn"></a>
+                        <a href="404.html" class="social-link" aria-label="X"><img src="images/social/x.webp" alt="X"></a>
+                        <a href="404.html" class="social-link" aria-label="YouTube"><img src="images/social/youtube.webp" alt="YouTube"></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="loans.html">Loans</a></li>
+                        <li><a href="investments.html">Investments</a></li>
+                        <li><a href="wealth.html">Wealth Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="404.html">Help Center</a></li>
+                        <li><a href="404.html">Security</a></li>
+                        <li><a href="404.html">FAQs</a></li>
+                        <li><a href="404.html">Live Chat</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="404.html">Privacy Policy</a></li>
+                        <li><a href="404.html">Terms &amp; Conditions</a></li>
+                        <li><a href="404.html">Cookie Policy</a></li>
+                        <li><a href="404.html">Licenses</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 footer-contact">
+                    <h6 class="footer-title">Contact</h6>
+                    <a href="404.html" class="footer-address">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>100 Financial District Ave,<br>New York, NY 10005</span>
+                    </a>
+                    <a href="404.html"><i class="bi bi-telephone-fill"></i> +1 (800) 555-0142</a>
+                    <a href="404.html"><i class="bi bi-envelope-fill"></i> support@stackly.com</a>
+                    <span class="footer-hours"><i class="bi bi-clock-fill"></i> Mon - Sat: 9:00 AM - 7:00 PM</span>
+                    <a href="404.html" class="footer-cta">Get Directions <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright + Legal -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <span>&copy; 2026 Stackly. All Rights Reserved.</span>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-bottom-links justify-content-center justify-content-md-end">
+                            <li><a href="404.html">Privacy Policy</a></li>
+                            <li><a href="404.html">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

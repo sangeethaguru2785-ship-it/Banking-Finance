@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Stackly</title>
+    <meta name="description" content="Get in touch with Stackly - phone, email, or send us a message. We're here to help.">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/bank-cards.webp" type="image/webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================== SCROLL PROGRESS ================== -->
+    <div id="scroll-progress"></div>
+
+    <!-- ================== NAVBAR ================== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-red.webp" alt="Stackly" class="brand-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavContent" aria-controls="mainNavContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="banking.html">Banking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loans.html">Loans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investments.html">Investments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wealth.html">Wealth Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex flex-lg-row flex-column gap-2 align-items-center">
+                    <a href="login.html" class="btn btn-outline-light btn-sm nav-btn">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================== PAGE HERO ================== -->
+    <section class="page-hero page-hero-bg-bank7">
+        <div class="container">
+            <div class="section-label">
+                <span class="label-line"></span> Get In Touch <span class="label-line"></span>
+            </div>
+            <h1 class="page-hero-title">
+                Let's Start a <span class="text-gradient">Financial Conversation</span>
+            </h1>
+            <p class="page-hero-sub">
+                Whether you have a question about our products, need technical support, or want to partner with us — our team is here to help.
+            </p>
+            <nav class="page-hero-breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="bi bi-chevron-right"></i>
+                <span>Contact</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ================== CONTACT SECTION ================== -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="section-label">
+                        <span class="label-line"></span> Get In Touch
+                    </div>
+                    <h2 class="section-title">
+                        Let's Start a <span class="text-gradient">Financial Conversation</span>
+                    </h2>
+                    <p class="section-desc mb-4">
+                        Whether you have a question about our products, need technical support, or want to partner with us — our team is here to help.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                            <div>
+                                <h6>Headquarters</h6>
+                                <span>100 Financial District Ave, New York, NY 10005</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                            <div>
+                                <h6>Phone</h6>
+                                <span>1-800-STACKLY (1-800-668-2226)</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                            <div>
+                                <h6>Email</h6>
+                                <span>support@stackly.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links mt-4">
+                        <a href="404.html" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="404.html" class="social-link" aria-label="X (formerly Twitter)"><i class="bi bi-twitter-x"></i></a>
+                        <a href="404.html" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="404.html" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="contact-form-wrap glass">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="John Doe" required data-validate="name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject">
+                                        <option selected>General Inquiry</option>
+                                        <option>Account Support</option>
+                                        <option>Business Banking</option>
+                                        <option>Investment Services</option>
+                                        <option>Careers</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="+1 (555) 000-0000" data-validate="number">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary-gradient btn-lg w-100 submit-btn">
+                                        Send Message <i class="bi bi-send ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== WAYS TO REACH US ================== -->
+    <section id="reach-us" class="services-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Ways to Reach Us <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Support That's <span class="text-gradient">Always Within Reach</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    However you prefer to talk — live, by phone, or in person — a real human is ready to help.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-chat-dots"></i></div>
+                        <h4>Live Chat</h4>
+                        <p>Instant answers from a real agent — 24/7, directly in the app or website.</p>
+                        <a href="404.html" class="service-link">Start Chatting <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-telephone"></i></div>
+                        <h4>Phone Support</h4>
+                        <p>Call us anytime at 1-800-STACKLY. Average wait time is under 2 minutes.</p>
+                        <a href="404.html" class="service-link">Call Now <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-envelope-open"></i></div>
+                        <h4>Email Support</h4>
+                        <p>Send detailed questions to support@stackly.com and hear back within one business day.</p>
+                        <a href="404.html" class="service-link">Email Us <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-life-preserver"></i></div>
+                        <h4>Help Center</h4>
+                        <p>Browse hundreds of guides and tutorials to find answers on your own, anytime.</p>
+                        <a href="404.html" class="service-link">Browse Guides <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-geo-alt"></i></div>
+                        <h4>Visit a Branch</h4>
+                        <p>Meet a specialist in person at one of our flagship locations across the country.</p>
+                        <a href="404.html" class="service-link">Find a Branch <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-camera-video"></i></div>
+                        <h4>Video Calls</h4>
+                        <p>Face-to-face consultations with advisors from the comfort of your own home.</p>
+                        <a href="404.html" class="service-link">Book a Call <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== OUR LOCATIONS ================== -->
+    <section id="locations" class="locations-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Our Locations <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Find Us Around the <span class="text-gradient">World</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    Flagship offices staffed by dedicated specialists — walk in for a coffee and a consult, or drop by with a quick question.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="location-card">
+                        <div class="location-pin"><i class="bi bi-geo-alt-fill"></i></div>
+                        <h4 class="location-name">New York HQ</h4>
+                        <span class="location-role">Headquarters</span>
+                        <p class="location-address">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>100 Financial District Ave, New York, NY 10005</span>
+                        </p>
+                        <div class="location-meta">
+                            <span><i class="bi bi-telephone"></i> +1 (800) 555-0142</span>
+                            <span><i class="bi bi-envelope"></i> nyc@stackly.com</span>
+                            <span><i class="bi bi-clock"></i> Mon–Sat: 9:00 AM – 7:00 PM</span>
+                        </div>
+                        <a href="404.html" target="_blank" rel="noopener" class="btn btn-outline-dark btn-lg location-cta">Get Directions <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="location-card">
+                        <div class="location-pin"><i class="bi bi-geo-alt-fill"></i></div>
+                        <h4 class="location-name">San Francisco</h4>
+                        <span class="location-role">West Coast</span>
+                        <p class="location-address">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>221 Market Street, Suite 500, San Francisco, CA 94105</span>
+                        </p>
+                        <div class="location-meta">
+                            <span><i class="bi bi-telephone"></i> +1 (415) 555-0182</span>
+                            <span><i class="bi bi-envelope"></i> sf@stackly.com</span>
+                            <span><i class="bi bi-clock"></i> Mon–Fri: 8:00 AM – 6:00 PM</span>
+                        </div>
+                        <a href="404.html" target="_blank" rel="noopener" class="btn btn-outline-dark btn-lg location-cta">Get Directions <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="location-card">
+                        <div class="location-pin"><i class="bi bi-geo-alt-fill"></i></div>
+                        <h4 class="location-name">London</h4>
+                        <span class="location-role">Europe</span>
+                        <p class="location-address">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>1 Finsbury Square, London EC2A 1AE, United Kingdom</span>
+                        </p>
+                        <div class="location-meta">
+                            <span><i class="bi bi-telephone"></i> +44 20 5550 1472</span>
+                            <span><i class="bi bi-envelope"></i> london@stackly.com</span>
+                            <span><i class="bi bi-clock"></i> Mon–Fri: 9:00 AM – 6:00 PM</span>
+                        </div>
+                        <a href="404.html" target="_blank" rel="noopener" class="btn btn-outline-dark btn-lg location-cta">Get Directions <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== MAP / LOCATION EMBED ================== -->
+    <section id="map" class="map-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Find Our Headquarters <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Come Say <span class="text-gradient">Hello</span>
+                </h2>
+            </div>
+            <div class="map-wrap" data-aos="zoom-in">
+                <iframe
+                    src="https://www.google.com/maps?q=New+York,NY&z=12&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Stackly Headquarters Map"
+                    allowfullscreen></iframe>
+                <div class="map-float-card glass">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <div>
+                        <strong>Stackly Headquarters</strong>
+                        <span>100 Financial District Ave, New York, NY</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== TESTIMONIALS ================== -->
+    <section id="testimonials" class="testimonials-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Testimonials <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    What People Say About <span class="text-gradient">Our Support</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    Real experiences from customers who got the help they needed, right when they needed it.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "I messaged support at 11 PM with a card issue and got a fix within 20 minutes. Genuinely the fastest banking support I've ever experienced."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/p2.webp" alt="Sarah Johnson">
+                            <div>
+                                <h6>Sarah Johnson</h6>
+                                <span>Product Designer, San Francisco</span>
+                            </div>
+                            <i class="bi bi-patch-check-fill verified"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Their team helped migrate our entire business banking over a single weekend. Responsive, patient, and incredibly organized."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/p10.webp" alt="Maria Rodriguez">
+                            <div>
+                                <h6>Maria Rodriguez</h6>
+                                <span>CEO, Brightline Logistics</span>
+                            </div>
+                            <i class="bi bi-patch-check-fill verified"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Booked a video call with a wealth advisor and came away with a full retirement plan. Clear, personal, and zero sales pressure."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/p5.webp" alt="James Chen">
+                            <div>
+                                <h6>James Chen</h6>
+                                <span>Software Engineer, Toronto</span>
+                            </div>
+                            <i class="bi bi-patch-check-fill verified"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== FAQ SECTION ================== -->
+    <section id="faq" class="faq-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> FAQs <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Quick Answers to <span class="text-gradient">Common Questions</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    Can't find what you're looking for? Chat with us or send a message — we're here 24/7.
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9" data-aos="fade-up">
+                    <div class="accordion faq-accordion" id="contactFAQ">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conFaqOne" aria-expanded="true" aria-controls="conFaqOne">
+                                    What are your support hours?
+                                </button>
+                            </h3>
+                            <div id="conFaqOne" class="accordion-collapse collapse show" data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    Our support team is available 24/7, 365 days a year. Phone lines are staffed daily, and in-person branches follow the hours listed on each location card.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#conFaqTwo" aria-expanded="false" aria-controls="conFaqTwo">
+                                    How quickly will I get a response?
+                                </button>
+                            </h3>
+                            <div id="conFaqTwo" class="accordion-collapse collapse" data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    Live chat typically connects in under a minute, phone calls average under 2 minutes of wait time, and emails are answered within one business day.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#conFaqThree" aria-expanded="false" aria-controls="conFaqThree">
+                                    Do you offer support in other languages?
+                                </button>
+                            </h3>
+                            <div id="conFaqThree" class="accordion-collapse collapse" data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    Yes. Our multilingual team supports English, Spanish, French, German, and Mandarin — just let us know your preference when you reach out.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#conFaqFour" aria-expanded="false" aria-controls="conFaqFour">
+                                    How do I report suspicious activity?
+                                </button>
+                            </h3>
+                            <div id="conFaqFour" class="accordion-collapse collapse" data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    Report any suspicious activity immediately via the in-app chat, our 24/7 fraud hotline, or by visiting any branch. Our fraud team monitors alerts around the clock.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#conFaqFive" aria-expanded="false" aria-controls="conFaqFive">
+                                    Do you have physical branches?
+                                </button>
+                            </h3>
+                            <div id="conFaqFive" class="accordion-collapse collapse" data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    We operate flagship locations in New York, San Francisco, and London, with more opening soon. You can also reach advisors by phone, chat, or video from anywhere.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== CTA SECTION ================== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-banner" data-aos="zoom-in">
+                <div class="cta-bg-image"></div>
+                <div class="cta-content text-center">
+                    <h2 class="mb-3">Ready to experience <span class="text-gradient-light">Modern Banking?</span></h2>
+                    <p class="cta-text">Join over 4.5 million smart banking customers. Open your free account in less than 5 minutes.</p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center mt-4">
+                        <a href="404.html" class="btn btn-light btn-lg cta-btn"><i class="bi bi-person-plus-fill me-2"></i>Open an Account</a>
+                        <a href="404.html" class="btn btn-outline-light btn-lg cta-btn"><i class="bi bi-chat-dots me-2"></i>Talk to an Advisor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== NEWSLETTER ================== -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-card">
+                <span class="newsletter-icon"><i class="bi bi-envelope-paper-fill"></i></span>
+                <h3>Stay Ahead with Stackly Insights</h3>
+                <p class="newsletter-desc">Get monthly updates on finance, investing, and exclusive offers — delivered straight to your inbox.</p>
+                <form class="newsletter-form" action="404.html" method="get" novalidate>
+                    <div class="newsletter-input-wrap">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary-gradient">Subscribe</button>
+                    </div>
+                    <p class="newsletter-note"><i class="bi bi-shield-check"></i> No spam. Unsubscribe anytime.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== FOOTER ================== -->
+    <footer class="footer-section">
+        <div class="container">
+            <!-- Main row: Logo + Social | Quick Links | Support | Legal | Contact -->
+            <div class="row g-4 g-lg-5 align-items-start footer-top">
+                <div class="col-md-6 col-xl-3">
+                    <a class="navbar-brand footer-brand" href="index.html">
+                        <img src="images/logo-red.webp" alt="Stackly" class="brand-logo">
+                    </a>
+                    <p class="footer-desc mt-3">
+                        Modern digital banking, investing, and secure financial solutions in one platform.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="404.html" class="social-link" aria-label="Instagram"><img src="images/social/instagram.webp" alt="Instagram"></a>
+                        <a href="404.html" class="social-link" aria-label="Facebook"><img src="images/social/facebook.webp" alt="Facebook"></a>
+                        <a href="404.html" class="social-link" aria-label="LinkedIn"><img src="images/social/linkedin.webp" alt="LinkedIn"></a>
+                        <a href="404.html" class="social-link" aria-label="X"><img src="images/social/x.webp" alt="X"></a>
+                        <a href="404.html" class="social-link" aria-label="YouTube"><img src="images/social/youtube.webp" alt="YouTube"></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="loans.html">Loans</a></li>
+                        <li><a href="investments.html">Investments</a></li>
+                        <li><a href="wealth.html">Wealth Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="404.html">Help Center</a></li>
+                        <li><a href="404.html">Security</a></li>
+                        <li><a href="404.html">FAQs</a></li>
+                        <li><a href="404.html">Live Chat</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="404.html">Privacy Policy</a></li>
+                        <li><a href="404.html">Terms &amp; Conditions</a></li>
+                        <li><a href="404.html">Cookie Policy</a></li>
+                        <li><a href="404.html">Licenses</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 footer-contact">
+                    <h6 class="footer-title">Contact</h6>
+                    <a href="404.html" class="footer-address">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>100 Financial District Ave,<br>New York, NY 10005</span>
+                    </a>
+                    <a href="404.html"><i class="bi bi-telephone-fill"></i> +1 (800) 555-0142</a>
+                    <a href="404.html"><i class="bi bi-envelope-fill"></i> support@stackly.com</a>
+                    <span class="footer-hours"><i class="bi bi-clock-fill"></i> Mon - Sat: 9:00 AM - 7:00 PM</span>
+                    <a href="404.html" class="footer-cta">Get Directions <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright + Legal -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <span>&copy; 2026 Stackly. All Rights Reserved.</span>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-bottom-links justify-content-center justify-content-md-end">
+                            <li><a href="404.html">Privacy Policy</a></li>
+                            <li><a href="404.html">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

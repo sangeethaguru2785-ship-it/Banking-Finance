@@ -1,0 +1,579 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loans - Stackly</title>
+    <meta name="description" content="Stackly loans - flexible home, auto, personal, and business loans with competitive rates.">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/bank-cards.webp" type="image/webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================== SCROLL PROGRESS ================== -->
+    <div id="scroll-progress"></div>
+
+    <!-- ================== NAVBAR ================== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-red.webp" alt="Stackly" class="brand-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavContent" aria-controls="mainNavContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="banking.html">Banking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loans.html">Loans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investments.html">Investments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wealth.html">Wealth Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex flex-lg-row flex-column gap-2 align-items-center">
+                    <a href="login.html" class="btn btn-outline-light btn-sm nav-btn">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================== PAGE HERO ================== -->
+    <section class="page-hero page-hero-bg-bank4">
+        <div class="container">
+            <div class="section-label">
+                <span class="label-line"></span> Loans <span class="label-line"></span>
+            </div>
+            <h1 class="page-hero-title">
+                Funding That <span class="text-gradient">Moves With You</span>
+            </h1>
+            <p class="page-hero-sub">
+                Whether you're buying your first home, expanding your business, or funding a big life milestone — flexible options with transparent terms and competitive rates.
+            </p>
+            <nav class="page-hero-breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="bi bi-chevron-right"></i>
+                <span>Loans</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ================== LOANS SECTION ================== -->
+    <section id="loans" class="loans-section section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="loans-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1200&auto=format&fit=crop" alt="Modern home with keys" class="loans-img" loading="lazy">
+                        <div class="loans-img-badge glass">
+                            <span class="loans-badge-num">3.9%</span>
+                            <span class="loans-badge-text">Starting APR</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="section-label">
+                        <span class="label-line"></span> Loans
+                    </div>
+                    <h2 class="section-title">
+                        Funding That <span class="text-gradient">Moves With You</span>
+                    </h2>
+                    <p class="section-desc mb-4">
+                        Whether you're buying your first home, expanding your business, or funding a big life milestone — Stackly offers flexible loan options with transparent terms and competitive rates.
+                    </p>
+                    <div class="loan-types">
+                        <div class="loan-type-item">
+                            <div class="loan-type-icon"><i class="bi bi-house-heart-fill"></i></div>
+                            <div>
+                                <h6>Home Mortgages</h6>
+                                <span>Flexible terms from 10-30 years</span>
+                            </div>
+                        </div>
+                        <div class="loan-type-item">
+                            <div class="loan-type-icon"><i class="bi bi-car-front-fill"></i></div>
+                            <div>
+                                <h6>Auto Loans</h6>
+                                <span>Pre-approved rates in minutes</span>
+                            </div>
+                        </div>
+                        <div class="loan-type-item">
+                            <div class="loan-type-icon"><i class="bi bi-person-raised-hand"></i></div>
+                            <div>
+                                <h6>Personal Loans</h6>
+                                <span>No collateral required</span>
+                            </div>
+                        </div>
+                        <div class="loan-type-item">
+                            <div class="loan-type-icon"><i class="bi bi-building-fill-up"></i></div>
+                            <div>
+                                <h6>Business Loans</h6>
+                                <span>Scale with working capital</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="404.html" class="btn btn-primary-gradient btn-lg">Check Eligibility <i class="bi bi-arrow-right ms-2"></i></a>
+                        <a href="404.html" class="btn btn-glass btn-lg" style="color:var(--text-dark); border:1px solid var(--border-light); background:var(--gray-100);">
+                            <i class="bi bi-calculator me-2"></i> Loan Calculator
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== LOAN CALCULATOR ================== -->
+    <section id="calc" class="loan-calc-section section-padding">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="section-label">
+                        <span class="label-line"></span> Loan Calculator
+                    </div>
+                    <h2 class="section-title">
+                        Estimate Your Monthly <span class="text-gradient-light">Payment</span>
+                    </h2>
+                    <p class="section-desc mb-4">
+                        Adjust the amount, rate, and term to see a clear picture of your monthly payment and total interest — before you ever apply.
+                    </p>
+                    <ul class="loan-calc-bullets">
+                        <li><i class="bi bi-check-circle-fill"></i> No credit impact — estimates are instant and free</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Works for home, auto, personal, and business loans</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Get a matched offer in minutes with a soft-check only</li>
+                    </ul>
+                    <a href="404.html" class="btn btn-primary-gradient btn-lg"><i class="bi bi-chat-dots me-2"></i>Talk to a Loan Advisor</a>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="loan-calc-panel" id="loanCalculator">
+                        <div class="loan-calc-field">
+                            <label for="loanAmountRange">Loan Amount
+                                <output id="loanAmountOut" for="loanAmountRange">$350,000</output>
+                            </label>
+                            <input type="range" class="form-range" id="loanAmountRange" min="5000" max="2000000" step="5000" value="350000">
+                        </div>
+                        <div class="loan-calc-field">
+                            <label for="loanRateRange">Interest Rate (APR)
+                                <output id="loanRateOut" for="loanRateRange">6.50%</output>
+                            </label>
+                            <input type="range" class="form-range" id="loanRateRange" min="1" max="15" step="0.1" value="6.5">
+                        </div>
+                        <div class="loan-calc-field">
+                            <label for="loanTermRange">Loan Term
+                                <output id="loanTermOut" for="loanTermRange">30 yrs</output>
+                            </label>
+                            <input type="range" class="form-range" id="loanTermRange" min="1" max="30" step="1" value="30">
+                        </div>
+                        <div class="loan-calc-result">
+                            <div class="loan-result-box loan-result-main">
+                                <span>Estimated Monthly Payment</span>
+                                <strong id="loanMonthlyOut">$2,212</strong>
+                            </div>
+                            <div class="loan-result-box">
+                                <span>Total Interest</span>
+                                <strong id="loanTotalInterestOut">$446,430</strong>
+                            </div>
+                            <div class="loan-result-box">
+                                <span>Total Payment</span>
+                                <strong id="loanTotalPayOut">$796,430</strong>
+                            </div>
+                        </div>
+                        <p class="loan-calc-note">Estimates are informational only and do not constitute an offer of credit. Rates depend on creditworthiness and loan type.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== LOAN PLANS & RATES ================== -->
+    <section id="loan-plans" class="plans-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Loan Plans &amp; Rates <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    A Loan Option for <span class="text-gradient">Every Milestone</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    Competitive starting rates, flexible terms, and fast approvals — whether you're buying a home, a car, or building a business.
+                </p>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="plan-card">
+                        <div class="plan-name">Home Mortgages</div>
+                        <div class="plan-price">3.9%<small> Starting APR</small></div>
+                        <p class="plan-desc">Fixed and adjustable-rate mortgages for your dream home.</p>
+                        <hr class="plan-divider">
+                        <ul class="plan-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Terms from 10 to 30 years</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Down payments from 3%</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Pre-approval in 24 hours</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Refinance &amp; cash-out options</li>
+                        </ul>
+                        <a href="404.html" class="btn btn-outline-dark btn-lg plan-cta">Get a Mortgage Quote</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="plan-card plan-featured">
+                        <span class="plan-popular">Most Popular</span>
+                        <div class="plan-name">Auto Loans</div>
+                        <div class="plan-price">5.4%<small> Starting APR</small></div>
+                        <p class="plan-desc">Pre-approved financing that puts you in the driver's seat.</p>
+                        <hr class="plan-divider">
+                        <ul class="plan-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Terms from 24 to 84 months</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Pre-approval in minutes</li>
+                            <li><i class="bi bi-check-circle-fill"></i> New &amp; used vehicle coverage</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Refinance options available</li>
+                        </ul>
+                        <a href="404.html" class="btn btn-primary-gradient btn-lg plan-cta">Get Pre-Approved</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="plan-card">
+                        <div class="plan-name">Personal Loans</div>
+                        <div class="plan-price">7.9%<small> Starting APR</small></div>
+                        <p class="plan-desc">Unsecured funding for life's big moments, big or small.</p>
+                        <hr class="plan-divider">
+                        <ul class="plan-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Loans up to $100,000</li>
+                            <li><i class="bi bi-check-circle-fill"></i> No collateral required</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Funds as fast as 24 hours</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Fixed rates &amp; no prepayment penalty</li>
+                        </ul>
+                        <a href="404.html" class="btn btn-outline-dark btn-lg plan-cta">Check My Rate</a>
+                    </div>
+                </div>
+            </div>
+            <p class="plan-note" data-aos="fade-up">Checking your rate never affects your credit score. Business and student loan options also available.</p>
+        </div>
+    </section>
+
+    <!-- ================== HOW IT WORKS / STEPS ================== -->
+    <section id="how-it-works" class="steps-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> How It Works <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    From Application to Approval in <span class="text-gradient">Three Steps</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    No paperwork stacks or endless waiting. Apply online, upload documents, and get funded — fast, transparent, and fully digital.
+                </p>
+            </div>
+            <div class="row g-4 steps-grid">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="step-card">
+                        <span class="step-number">01</span>
+                        <div class="step-icon"><i class="bi bi-file-earmark-text"></i></div>
+                        <h4>Apply Online</h4>
+                        <p>Complete a simple digital application in under 10 minutes and check your rate instantly.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="step-card">
+                        <span class="step-number">02</span>
+                        <div class="step-icon"><i class="bi bi-patch-check"></i></div>
+                        <h4>Verify &amp; Approve</h4>
+                        <p>Upload documents securely and get a decision from real underwriters in as little as 24 hours.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-card">
+                        <span class="step-number">03</span>
+                        <div class="step-icon"><i class="bi bi-cash-coin"></i></div>
+                        <h4>Get Funded</h4>
+                        <p>Accept your offer and receive funds directly in your account — often the very same day.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="404.html" class="btn btn-primary-gradient btn-lg">
+                    Check Your Eligibility <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== FAQ SECTION ================== -->
+    <section id="faq" class="faq-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> FAQs <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Loan Questions, <span class="text-gradient">Answered</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    Everything you need to know about applying for a loan with Stackly.
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9" data-aos="fade-up">
+                    <div class="accordion faq-accordion" id="loanFAQ">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                    Will checking my rate affect my credit score?
+                                </button>
+                            </h3>
+                            <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#loanFAQ">
+                                <div class="accordion-body">
+                                    No. Checking your rate uses a soft credit inquiry only, which never impacts your credit score. A hard inquiry is made only after you officially accept an offer.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                    How fast can I get my funds?
+                                </button>
+                            </h3>
+                            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#loanFAQ">
+                                <div class="accordion-body">
+                                    Most personal and auto loans are funded within 24 hours of approval. Mortgage closing typically takes 2–4 weeks, depending on your lender and appraisal timelines.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                    What credit score do I need to qualify?
+                                </button>
+                            </h3>
+                            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#loanFAQ">
+                                <div class="accordion-body">
+                                    Requirements vary by loan type. A score of 620+ qualifies for many options, and we offer programs for first-time buyers with scores as low as 580. Our advisors will help find the right fit for your profile.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                                    Are there any prepayment penalties?
+                                </button>
+                            </h3>
+                            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#loanFAQ">
+                                <div class="accordion-body">
+                                    Personal and auto loans have zero prepayment penalties — you can pay extra or pay off early anytime. Some mortgage products may have terms worth reviewing, which our team will walk you through.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                                    Can I refinance an existing loan with Stackly?
+                                </button>
+                            </h3>
+                            <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#loanFAQ">
+                                <div class="accordion-body">
+                                    Yes. Whether you want a lower rate, lower monthly payment, or to access equity, we offer refinancing for mortgages, auto loans, and personal debt consolidation.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== SECURITY & TRUST ================== -->
+    <section id="security" class="security-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Security &amp; Trust <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Your Data, Protected at <span class="text-gradient-light">Every Step</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 620px;">
+                    Applying for a loan means sharing sensitive information. We protect it with the same bank-grade security we use for every account.
+                </p>
+            </div>
+            <div class="security-grid">
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="security-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                    <h5>256-Bit Encryption</h5>
+                    <p>Every application, document, and payment is protected by bank-grade encryption.</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="security-icon"><i class="bi bi-shield-exclamation"></i></div>
+                    <h5>Identity Protection</h5>
+                    <p>Advanced verification and monitoring keep your identity safe from fraud.</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="security-icon"><i class="bi bi-credit-card-2-front"></i></div>
+                    <h5>Secure Payments</h5>
+                    <p>PCI DSS compliant processing safeguards every single transaction.</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="security-icon"><i class="bi bi-patch-check-fill"></i></div>
+                    <h5>Regulated &amp; Transparent</h5>
+                    <p>Fully licensed, with clear terms and zero hidden fees — ever.</p>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-3 trust-badges" data-aos="fade-up">
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> PCI DSS Compliant</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> SOC 2 Type II</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> Two-Factor Auth</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> GDPR Ready</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> No Hidden Fees</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== CTA SECTION ================== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-banner" data-aos="zoom-in">
+                <div class="cta-bg-image"></div>
+                <div class="cta-content text-center">
+                    <h2 class="mb-3">Ready to experience <span class="text-gradient-light">Modern Banking?</span></h2>
+                    <p class="cta-text">Join over 4.5 million smart banking customers. Open your free account in less than 5 minutes.</p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center mt-4">
+                        <a href="404.html" class="btn btn-light btn-lg cta-btn"><i class="bi bi-person-plus-fill me-2"></i>Open an Account</a>
+                        <a href="404.html" class="btn btn-outline-light btn-lg cta-btn"><i class="bi bi-chat-dots me-2"></i>Talk to an Advisor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== NEWSLETTER ================== -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-card">
+                <span class="newsletter-icon"><i class="bi bi-envelope-paper-fill"></i></span>
+                <h3>Stay Ahead with Stackly Insights</h3>
+                <p class="newsletter-desc">Get monthly updates on finance, investing, and exclusive offers — delivered straight to your inbox.</p>
+                <form class="newsletter-form" action="404.html" method="get" novalidate>
+                    <div class="newsletter-input-wrap">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary-gradient">Subscribe</button>
+                    </div>
+                    <p class="newsletter-note"><i class="bi bi-shield-check"></i> No spam. Unsubscribe anytime.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== FOOTER ================== -->
+    <footer class="footer-section">
+        <div class="container">
+            <!-- Main row: Logo + Social | Quick Links | Support | Legal | Contact -->
+            <div class="row g-4 g-lg-5 align-items-start footer-top">
+                <div class="col-md-6 col-xl-3">
+                    <a class="navbar-brand footer-brand" href="index.html">
+                        <img src="images/logo-red.webp" alt="Stackly" class="brand-logo">
+                    </a>
+                    <p class="footer-desc mt-3">
+                        Modern digital banking, investing, and secure financial solutions in one platform.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="404.html" class="social-link" aria-label="Instagram"><img src="images/social/instagram.webp" alt="Instagram"></a>
+                        <a href="404.html" class="social-link" aria-label="Facebook"><img src="images/social/facebook.webp" alt="Facebook"></a>
+                        <a href="404.html" class="social-link" aria-label="LinkedIn"><img src="images/social/linkedin.webp" alt="LinkedIn"></a>
+                        <a href="404.html" class="social-link" aria-label="X"><img src="images/social/x.webp" alt="X"></a>
+                        <a href="404.html" class="social-link" aria-label="YouTube"><img src="images/social/youtube.webp" alt="YouTube"></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="loans.html">Loans</a></li>
+                        <li><a href="investments.html">Investments</a></li>
+                        <li><a href="wealth.html">Wealth Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="404.html">Help Center</a></li>
+                        <li><a href="404.html">Security</a></li>
+                        <li><a href="404.html">FAQs</a></li>
+                        <li><a href="404.html">Live Chat</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="404.html">Privacy Policy</a></li>
+                        <li><a href="404.html">Terms &amp; Conditions</a></li>
+                        <li><a href="404.html">Cookie Policy</a></li>
+                        <li><a href="404.html">Licenses</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 footer-contact">
+                    <h6 class="footer-title">Contact</h6>
+                    <a href="404.html" class="footer-address">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>100 Financial District Ave,<br>New York, NY 10005</span>
+                    </a>
+                    <a href="404.html"><i class="bi bi-telephone-fill"></i> +1 (800) 555-0142</a>
+                    <a href="404.html"><i class="bi bi-envelope-fill"></i> support@stackly.com</a>
+                    <span class="footer-hours"><i class="bi bi-clock-fill"></i> Mon - Sat: 9:00 AM - 7:00 PM</span>
+                    <a href="404.html" class="footer-cta">Get Directions <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright + Legal -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <span>&copy; 2026 Stackly. All Rights Reserved.</span>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-bottom-links justify-content-center justify-content-md-end">
+                            <li><a href="404.html">Privacy Policy</a></li>
+                            <li><a href="404.html">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,895 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly - Premium Banking & Finance</title>
+    <meta name="description" content="Stackly - A modern, innovative banking and finance platform. Premium digital banking solutions.">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/bank-cards.webp" type="image/webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================== SCROLL PROGRESS ================== -->
+    <div id="scroll-progress"></div>
+
+    <!-- ================== NAVBAR ================== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-red.webp" alt="Stackly" class="brand-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavContent" aria-controls="mainNavContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="banking.html">Banking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loans.html">Loans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investments.html">Investments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wealth.html">Wealth Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex flex-lg-row flex-column gap-2 align-items-center">
+                    <a href="login.html" class="btn btn-outline-light btn-sm nav-btn">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================== HERO SECTION ================== -->
+    <header id="home" class="hero-section">
+        <div class="hero-background"></div>
+
+        <div class="container hero-container">
+            <div class="row align-items-center g-5">
+                <!-- Left Content -->
+                <div class="col-lg-6">
+                    <div class="hero-badge glass">
+                        <span class="pulse-dot"></span>
+                        Smarter Banking &bull; Better Future
+                    </div>
+                    <h1 class="hero-title">
+                        Your Money.<br>
+                        Your Future.<br>
+                        <span class="text-gradient">Our Expertise.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Experience smarter banking, secure financial solutions, and personalized services designed to help you move forward with confidence.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mt-4 hero-cta">
+                        <a href="404.html" class="btn btn-primary-gradient btn-lg hero-btn">
+                            Open an Account <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <a href="404.html" class="btn btn-hero-outline btn-lg hero-btn">
+                            Explore Services
+                        </a>
+                    </div>
+
+                    <!-- CTA Strip -->
+                    <div class="hero-cta-strip">
+                        <div class="hero-cta-strip-icon">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </div>
+                        <div class="hero-cta-strip-text">
+                            <strong>Start your journey today</strong>
+                            <span>Open your account in under 5 minutes — zero setup fees.</span>
+                        </div>
+                        <a href="404.html" class="btn btn-primary-gradient btn-sm hero-cta-strip-btn">
+                            Get Started <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                    <!-- Right Image + Floating Cards -->
+                <div class="col-lg-6">
+                    <div class="hero-dashboard">
+                        <div class="hero-dashboard-img-wrap">
+                            <video class="hero-dashboard-video" autoplay muted loop playsinline preload="auto" aria-hidden="true" disablepictureinpicture controlslist="nodownload noremoteplayback">
+                                <source src="video.mp4" type="video/mp4">
+                                Your browser does not support embedded video.
+                            </video>
+                        </div>
+
+                        <!-- Floating Card 1 - Balance -->
+                        <div class="dash-card balance-card-float">
+                            <div class="dash-card-icon"><i class="bi bi-wallet2"></i></div>
+                            <div class="dash-card-info">
+                                <span class="dash-card-label">Total Balance</span>
+                                <h4 class="dash-card-value">$84,620.50</h4>
+                                <span class="dash-card-trend">
+                                    <i class="bi bi-arrow-up-right"></i> +12.8%
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Card 2 - Investment -->
+                        <div class="dash-card invest-card-float">
+                            <div class="dash-card-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                            <div class="dash-card-info">
+                                <span class="dash-card-label">Portfolio Growth</span>
+                                <h4 class="dash-card-value">+18.42%</h4>
+                            </div>
+                        </div>
+
+                        <!-- Small Circular Notification -->
+                        <div class="dash-notification">
+                            <div class="dash-notification-circle">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <span class="dash-notification-text">Payment Secured</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Stats Bar -->
+            <div class="hero-stats-bar glass">
+                <div class="hero-stat-item">
+                    <h4 class="counter" data-prefix="$" data-target="2.4" data-suffix="B+">0</h4>
+                    <span>Assets Managed</span>
+                </div>
+                <div class="hero-stat-bar-divider"></div>
+                <div class="hero-stat-item">
+                    <h4 class="counter" data-target="98" data-suffix="K+">0</h4>
+                    <span>Happy Clients</span>
+                </div>
+                <div class="hero-stat-bar-divider"></div>
+                <div class="hero-stat-item">
+                    <h4 class="counter" data-target="99.9" data-suffix="%">0</h4>
+                    <span>Secure Transactions</span>
+                </div>
+                <div class="hero-stat-bar-divider"></div>
+                <div class="hero-stat-item">
+                    <h4 class="hero-stat-value">24/7</h4>
+                    <span>Digital Support</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================== BRANDS / PARTNERS ================== -->
+    <section class="partner-section py-4">
+        <div class="container">
+            <div class="partners-text text-center mb-4">
+                <span>Trusted by leading companies worldwide</span>
+            </div>
+            <div class="partners-row d-flex justify-content-center flex-wrap gap-5 align-items-center">
+                <div class="partner-logo"><i class="bi bi-patch-check-fill"></i> FinTechX</div>
+                <div class="partner-logo"><i class="bi bi-boxes"></i> CapitalOne</div>
+                <div class="partner-logo"><i class="bi bi-briefcase-fill"></i> NordVest</div>
+                <div class="partner-logo"><i class="bi bi-stars"></i> Meridian</div>
+                <div class="partner-logo"><i class="bi bi-currency-exchange"></i> PayFlow</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== ABOUT PREVIEW ================== -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop" alt="Stackly Headquarters" class="about-main-img">
+                        <div class="about-floating-card glass">
+                            <div class="about-floating-icon"><i class="bi bi-award-fill"></i></div>
+                            <div>
+                                <h5>25+ Years</h5>
+                                <span>Of Trusted Service</span>
+                            </div>
+                        </div>
+                        <div class="about-floating-card-2 glass">
+                            <i class="bi bi-people-fill"></i>
+                            <h5>4.5M+</h5>
+                            <span>Happy Customers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
+                    <div class="section-label">
+                        <span class="label-line"></span> About Stackly
+                    </div>
+                    <h2 class="section-title">
+                        Reimagining Finance for the <span class="text-gradient">Digital Age</span>
+                    </h2>
+                    <p class="section-desc">
+                        For over two and a half decades, Stackly has helped individuals and businesses achieve financial freedom. We blend cutting-edge technology with human-centric banking to deliver an experience that's secure, smart, and seamless.
+                    </p>
+                    <div class="about-features mt-4">
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                            <div>
+                                <h5>Smart Financial Insights</h5>
+                                <p>AI-powered analytics that help you understand your spending and grow your wealth intelligently.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon"><i class="bi bi-globe-americas"></i></div>
+                            <div>
+                                <h5>Global Banking Network</h5>
+                                <p>Seamless international transactions across 120+ countries with competitive exchange rates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="404.html" class="btn btn-primary-gradient btn-lg">
+                            Discover More <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <a href="404.html" class="btn btn-glass btn-lg" style="color:var(--text-dark); border:1px solid var(--border-light); background:var(--gray-100);">
+                            <i class="bi bi-headset me-2"></i> Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== BANKING / SERVICES PREVIEW ================== -->
+    <section id="banking" class="services-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Our Core Services <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Everything You Need for <span class="text-gradient">Financial Growth</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    From everyday banking to sophisticated investment solutions, we offer a complete suite of services designed around your lifestyle.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-wallet2"></i></div>
+                        <h4>Personal Banking</h4>
+                        <p>Smart checking and savings accounts with intelligent features that help your money work harder for you.</p>
+                        <a href="404.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-credit-card-2-front"></i></div>
+                        <h4>Credit Cards</h4>
+                        <p>Premium cards with exceptional rewards, cashback, travel perks, and zero hidden fees — every day.</p>
+                        <a href="404.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-house-check-fill"></i></div>
+                        <h4>Home Loans</h4>
+                        <p>Mortgage solutions with competitive rates, flexible terms, and fast approvals to turn dreams into keys.</p>
+                        <a href="404.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="404.html" class="btn btn-primary-gradient btn-lg">
+                    View All Services <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== HOW IT WORKS / STEPS ================== -->
+    <section id="how-it-works" class="steps-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> How It Works <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Getting Started Is <span class="text-gradient">Effortlessly Simple</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    From your very first login to long-term wealth building — three steps is all it takes to unlock everything Stackly offers.
+                </p>
+            </div>
+            <div class="row g-4 steps-grid">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="step-card">
+                        <span class="step-number">01</span>
+                        <div class="step-icon"><i class="bi bi-person-plus-fill"></i></div>
+                        <h4>Open an Account</h4>
+                        <p>Sign up in minutes with just your ID and email. No paperwork, no branches, no waiting in line.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="step-card">
+                        <span class="step-number">02</span>
+                        <div class="step-icon"><i class="bi bi-shield-check"></i></div>
+                        <h4>Verify &amp; Fund</h4>
+                        <p>Complete a fast, secure identity check and link your accounts to start moving money instantly.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-card">
+                        <span class="step-number">03</span>
+                        <div class="step-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                        <h4>Save, Spend &amp; Grow</h4>
+                        <p>Bank, invest, and build wealth with smart tools, real-time insights, and award-winning support.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="404.html" class="btn btn-primary-gradient btn-lg">
+                    Open Your Account <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== TRUST & STATISTICS ================== -->
+    <section id="trust-stats" class="trust-stats-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Trust &amp; Statistics <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Trusted by Millions, <span class="text-gradient">Backed by Numbers</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    Happy customers, billions in transactions, and a platform engineered for security — the numbers that power Stackly every day.
+                </p>
+            </div>
+            <div class="trust-stats-grid">
+                <div class="trust-stat-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="trust-stat-icon"><i class="bi bi-people-fill"></i></div>
+                    <h2 class="counter" data-target="1" data-suffix="M+">0</h2>
+                    <span>Happy Customers</span>
+                </div>
+                <div class="trust-stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="trust-stat-icon"><i class="bi bi-currency-dollar"></i></div>
+                    <h2 class="counter" data-target="5" data-prefix="$" data-suffix="B+">0</h2>
+                    <span>Transactions Processed</span>
+                </div>
+                <div class="trust-stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trust-stat-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                    <h2 class="counter" data-target="99.9" data-suffix="%">0</h2>
+                    <span>Secure &amp; Reliable</span>
+                </div>
+                <div class="trust-stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="trust-stat-icon"><i class="bi bi-headset"></i></div>
+                    <h2>24/7</h2>
+                    <span>Customer Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== FEATURES / WHY CHOOSE US ================== -->
+    <section id="features" class="features-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Why Choose Us <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Built Around <span class="text-gradient">Revolutionary Features</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    Every button, chart, and insight is crafted with one goal — making modern finance effortless for you.
+                </p>
+            </div>
+
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="feature-grid">
+                        <div class="feature-tile feature-tile-main">
+                            <img src="images/f1.webp" alt="Stackly mobile banking app interface" loading="lazy">
+                        </div>
+                        <div class="feature-tile glass" style="--delay: 0s;">
+                            <i class="bi bi-fingerprint"></i>
+                            <h5>Biometric Login</h5>
+                            <p>Secure access with Face ID &amp; fingerprint.</p>
+                        </div>
+                        <div class="feature-tile glass" style="--delay: .1s;">
+                            <i class="bi bi-robot"></i>
+                            <h5>AI Assistant</h5>
+                            <p>Your 24/7 financial copilot.</p>
+                        </div>
+                        <div class="feature-tile glass" style="--delay: .2s;">
+                            <i class="bi bi-arrow-repeat"></i>
+                            <h5>Auto Saving</h5>
+                            <p>Round-ups that build wealth.</p>
+                        </div>
+                        <div class="feature-tile glass" style="--delay: .3s;">
+                            <i class="bi bi-currency-bitcoin"></i>
+                            <h5>Crypto Trading</h5>
+                            <p>Buy, sell &amp; track digital assets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="section-label">
+                        <span class="label-line"></span> Powerful Features
+                    </div>
+                    <h2 class="section-title">
+                        Technology That Thinks <span class="text-gradient">Ahead of You</span>
+                    </h2>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-check"><i class="bi bi-check-lg"></i></div>
+                            <div>
+                                <h5>Instant Global Payments</h5>
+                                <p>Send money to 120+ countries in seconds at real exchange rates — no hidden fees, ever.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-check"><i class="bi bi-check-lg"></i></div>
+                            <div>
+                                <h5>Smart Budgeting</h5>
+                                <p>Automated categorization and spending insights that keep your finances beautifully organized.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-check"><i class="bi bi-check-lg"></i></div>
+                            <div>
+                                <h5>Enterprise-Grade Security</h5>
+                                <p>Advanced encryption, real-time fraud detection, and insurance on every single deposit.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-check"><i class="bi bi-check-lg"></i></div>
+                            <div>
+                                <h5>Flexible APIs for Business</h5>
+                                <p>Build on our open banking platform with robust, developer-friendly REST APIs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="404.html" class="btn btn-primary-gradient btn-lg">Explore All Features <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== DIGITAL EXPERIENCE & SMART TOOLS ================== -->
+    <section id="digital" class="digital-section section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="digital-visual">
+                        <div class="digital-frame">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" alt="Stackly digital dashboard" loading="lazy">
+                        </div>
+                        <div class="digital-float-card">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                            <span>Real-time insights, updated every second</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="section-label">
+                        <span class="label-line"></span> A Smarter Way to Bank
+                    </div>
+                    <h2 class="section-title">
+                        Smart Financial Tools Built <span class="text-gradient">Around Your Money</span>
+                    </h2>
+                    <p class="section-desc">
+                        Stackly's digital banking experience puts powerful, easy-to-use tools at your fingertips — so managing money feels effortless, not exhausting.
+                    </p>
+                    <div class="feature-list mt-4">
+                        <div class="feature-item">
+                            <div class="feature-check"><i class="bi bi-check-lg"></i></div>
+                            <div>
+                                <h5>Real-Time Spending Insights</h5>
+                                <p>Every transaction is instantly categorized and visualized so you always know where your money goes.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-check"><i class="bi bi-check-lg"></i></div>
+                            <div>
+                                <h5>Automated Smart Budgets</h5>
+                                <p>Budgets that adapt to your habits and auto-tune as your spending patterns evolve month to month.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-check"><i class="bi bi-check-lg"></i></div>
+                            <div>
+                                <h5>AI-Powered Saving Goals</h5>
+                                <p>Set a goal and our AI rounds up purchases and sweeps spare change to reach it automatically.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-check"><i class="bi bi-check-lg"></i></div>
+                            <div>
+                                <h5>Portfolio Analytics</h5>
+                                <p>Track investments, dividends, and market moves with beautifully simple, always-on dashboards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="404.html" class="btn btn-primary-gradient btn-lg">Discover Smart Tools <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== INVESTMENTS PREVIEW ================== -->
+    <section id="investments" class="investments-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Investments <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Grow Your Wealth with <span class="text-gradient">Confidence</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 640px;">
+                    From first-time investors to seasoned traders — access global markets, curated portfolios, and expert insights all from one powerful platform.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="investment-card">
+                        <div class="investment-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                        <h4>Stocks &amp; ETFs</h4>
+                        <p>Access 15,000+ stocks and ETFs across global exchanges with zero commission on standard trades.</p>
+                        <div class="investment-metric">
+                            <span>Performance</span>
+                            <strong class="invest-positive">+14.2% avg. return</strong>
+                        </div>
+                        <a href="404.html" class="service-link">Start Investing <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="investment-card">
+                        <div class="investment-icon"><i class="bi bi-coin"></i></div>
+                        <h4>Crypto Assets</h4>
+                        <p>Buy, sell, and hold 50+ cryptocurrencies with institutional-grade custody and insurance.</p>
+                        <div class="investment-metric">
+                            <span>Assets available</span>
+                            <strong>50+ coins</strong>
+                        </div>
+                        <a href="404.html" class="service-link">Explore Crypto <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="investment-card">
+                        <div class="investment-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+                        <h4>Mutual Funds</h4>
+                        <p>Diversified portfolios managed by award-winning fund managers with low expense ratios.</p>
+                        <div class="investment-metric">
+                            <span>Fund options</span>
+                            <strong>200+ funds</strong>
+                        </div>
+                        <a href="404.html" class="service-link">View Funds <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="404.html" class="btn btn-primary-gradient btn-lg">
+                    Explore All Investments <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== APP / DOWNLOAD SECTION ================== -->
+    <section class="app-section">
+        <div class="container">
+            <div class="app-banner glass-deep">
+                <div class="row align-items-center">
+                    <div class="col-lg-7" data-aos="fade-right">
+                        <div class="section-label">
+                            <span class="label-line"></span> Mobile Banking App
+                        </div>
+                        <h2 class="section-title">
+                            Banking in Your Pocket,<br>Anywhere on the <span class="text-gradient">Planet</span>
+                        </h2>
+                        <p class="section-desc mb-4">
+                            Download the Stackly app and manage your finances with a tap. Send money, track investments, and pay bills — trusted by over 4.5 million users across the globe.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 app-buttons">
+                            <a href="404.html" class="app-store-btn">
+                                <i class="bi bi-apple"></i>
+                                <span><small>Download on the</small><strong>App Store</strong></span>
+                            </a>
+                            <a href="404.html" class="app-store-btn">
+                                <i class="bi bi-google-play"></i>
+                                <span><small>Get it on</small><strong>Google Play</strong></span>
+                            </a>
+                        </div>
+                        <div class="app-rating mt-4 d-flex align-items-center gap-3">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <strong>4.9/5</strong>
+                            <span class="text-muted">from 128K reviews</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left">
+                        <div class="app-visual">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=700&auto=format&fit=crop" alt="Mobile banking on a phone" loading="lazy" class="app-img">
+                            <div class="app-float-badge glass">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Payment Successful</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== SECURITY & TRUST ================== -->
+    <section id="security" class="security-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Security &amp; Trust <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Your Money, Protected at <span class="text-gradient-light">Every Layer</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 620px;">
+                    Bank-grade security runs through everything we build. Your data is encrypted, monitored, and insured — around the clock.
+                </p>
+            </div>
+            <div class="security-grid">
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="security-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                    <h5>256-Bit Encryption</h5>
+                    <p>Bank-grade encryption protects every transaction and byte of your personal data.</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="security-icon"><i class="bi bi-fingerprint"></i></div>
+                    <h5>Biometric Login</h5>
+                    <p>Unlock with Face ID or fingerprint for a secure, password-free experience.</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="security-icon"><i class="bi bi-shield-exclamation"></i></div>
+                    <h5>24/7 Fraud Monitoring</h5>
+                    <p>Real-time AI detection flags suspicious activity instantly, before it can hurt you.</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="security-icon"><i class="bi bi-patch-check-fill"></i></div>
+                    <h5>Regulated &amp; Insured</h5>
+                    <p>Fully licensed and regulated, with deposit insurance on every qualified account.</p>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-3 trust-badges" data-aos="fade-up">
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> PCI DSS Compliant</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> SOC 2 Type II</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> Two-Factor Auth</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> GDPR Ready</span>
+                <span class="trust-badge"><i class="bi bi-shield-check"></i> Deposit Insured</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== TESTIMONIALS ================== -->
+    <section id="testimonials" class="testimonials-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">
+                    <span class="label-line"></span> Testimonials <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">
+                    Loved by Customers <span class="text-gradient">Worldwide</span>
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 600px;">
+                    Real stories from real people who trust Stackly with their money every single day.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Stackly completely transformed how I manage my finances. The AI insights alone have helped me save 30% more every month. The app is absolutely beautiful."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/p2.webp" alt="Sarah Johnson">
+                            <div>
+                                <h6>Sarah Johnson</h6>
+                                <span>Product Designer, San Francisco</span>
+                            </div>
+                            <i class="bi bi-patch-check-fill verified"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Our business moved to Stackly for international payments and cut costs by 40%. The dashboard is intuitive and the team's support is genuinely world-class."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/p10.webp" alt="Maria Rodriguez">
+                            <div>
+                                <h6>Maria Rodriguez</h6>
+                                <span>CEO, Brightline Logistics</span>
+                            </div>
+                            <i class="bi bi-patch-check-fill verified"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "As a first-time investor, I was nervous. Stackly's wealth management team made investing simple and transparent. My portfolio grew 18% in the first year."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/p5.webp" alt="James Chen">
+                            <div>
+                                <h6>James Chen</h6>
+                                <span>Software Engineer, Toronto</span>
+                            </div>
+                            <i class="bi bi-patch-check-fill verified"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== CTA SECTION ================== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-banner" data-aos="zoom-in">
+                <div class="cta-bg-image"></div>
+                <div class="cta-content text-center">
+                    <h2 class="mb-3">Ready to experience <span class="text-gradient-light">Modern Banking?</span></h2>
+                    <p class="cta-text">Join over 4.5 million smart banking customers. Open your free account in less than 5 minutes.</p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center mt-4">
+                        <a href="404.html" class="btn btn-light btn-lg cta-btn"><i class="bi bi-person-plus-fill me-2"></i>Open an Account</a>
+                        <a href="404.html" class="btn btn-outline-light btn-lg cta-btn"><i class="bi bi-chat-dots me-2"></i>Talk to an Advisor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== NEWSLETTER ================== -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-card">
+                <span class="newsletter-icon"><i class="bi bi-envelope-paper-fill"></i></span>
+                <h3>Stay Ahead with Stackly Insights</h3>
+                <p class="newsletter-desc">Get monthly updates on finance, investing, and exclusive offers — delivered straight to your inbox.</p>
+                <form class="newsletter-form" action="404.html" method="get" novalidate>
+                    <div class="newsletter-input-wrap">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary-gradient">Subscribe</button>
+                    </div>
+                    <p class="newsletter-note"><i class="bi bi-shield-check"></i> No spam. Unsubscribe anytime.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== FOOTER ================== -->
+    <footer class="footer-section">
+        <div class="container">
+            <!-- Main row: Logo + Social | Quick Links | Support | Legal | Contact -->
+            <div class="row g-4 g-lg-5 align-items-start footer-top">
+                <div class="col-md-6 col-xl-3">
+                    <a class="navbar-brand footer-brand" href="index.html">
+                        <img src="images/logo-red.webp" alt="Stackly" class="brand-logo">
+                    </a>
+                    <p class="footer-desc mt-3">
+                        Modern digital banking, investing, and secure financial solutions in one platform.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="404.html" class="social-link" aria-label="Instagram"><img src="images/social/instagram.webp" alt="Instagram"></a>
+                        <a href="404.html" class="social-link" aria-label="Facebook"><img src="images/social/facebook.webp" alt="Facebook"></a>
+                        <a href="404.html" class="social-link" aria-label="LinkedIn"><img src="images/social/linkedin.webp" alt="LinkedIn"></a>
+                        <a href="404.html" class="social-link" aria-label="X"><img src="images/social/x.webp" alt="X"></a>
+                        <a href="404.html" class="social-link" aria-label="YouTube"><img src="images/social/youtube.webp" alt="YouTube"></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="loans.html">Loans</a></li>
+                        <li><a href="investments.html">Investments</a></li>
+                        <li><a href="wealth.html">Wealth Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="404.html">Help Center</a></li>
+                        <li><a href="404.html">Security</a></li>
+                        <li><a href="404.html">FAQs</a></li>
+                        <li><a href="404.html">Live Chat</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="404.html">Privacy Policy</a></li>
+                        <li><a href="404.html">Terms &amp; Conditions</a></li>
+                        <li><a href="404.html">Cookie Policy</a></li>
+                        <li><a href="404.html">Licenses</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 footer-contact">
+                    <h6 class="footer-title">Contact</h6>
+                    <a href="404.html" class="footer-address">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>100 Financial District Ave,<br>New York, NY 10005</span>
+                    </a>
+                    <a href="404.html"><i class="bi bi-telephone-fill"></i> +1 (800) 555-0142</a>
+                    <a href="404.html"><i class="bi bi-envelope-fill"></i> support@stackly.com</a>
+                    <span class="footer-hours"><i class="bi bi-clock-fill"></i> Mon - Sat: 9:00 AM - 7:00 PM</span>
+                    <a href="404.html" class="footer-cta">Get Directions <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright + Legal -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <span>&copy; 2026 Stackly. All Rights Reserved.</span>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-bottom-links justify-content-center justify-content-md-end">
+                            <li><a href="404.html">Privacy Policy</a></li>
+                            <li><a href="404.html">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
